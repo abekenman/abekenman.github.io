@@ -1,4 +1,4 @@
-<?php echo '<!doctype html>
+<?php echo '<!doctype html>' ?>
 <html>
 <head>
 </head>

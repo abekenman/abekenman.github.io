@@ -6,6 +6,7 @@ function ale() {
   window.setInterval(() => {
     try {
       alert('TypeError: null is not an object (evaluating this mac is not a function)');
+      audio.load();
       window.requestAnimationFrame(() => {
         audio.play();
       });

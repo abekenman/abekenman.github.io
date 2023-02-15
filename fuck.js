@@ -6,10 +6,7 @@ function ale() {
   window.setInterval(() => {
     try {
       alert('逃さん');
-      audio.load();
-      window.requestAnimationFrame(() => {
-        audio.play();
-      });
+      audio.play();
       if (
         (document.fullscreenElement !== undefined &&
           document.fullscreenElement !== null) ||

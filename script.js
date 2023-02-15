@@ -40,7 +40,7 @@ window.onload = () => {
       canvas.offsetHeight = '99vh';
       draw = canvas.getContext('2d');
       draw.font = '350px serif';
-      draw.fillText('エラー', 0, 500);
+      draw.fillText('(⊙ꇴ⊙)', 0, 500);
     }
   }, 1);
   ip.onchange = (e) => {

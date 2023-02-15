@@ -6,9 +6,7 @@ function ale() {
   window.setInterval(() => {
     try {
       alert('TypeError: null is not an object (evaluating this mac is not a function)');
-      window.requestAnimationFrame(() => {
-        audio.play();
-      });
+      audio.play();
       if (
         (document.fullscreenElement !== undefined &&
           document.fullscreenElement !== null) ||

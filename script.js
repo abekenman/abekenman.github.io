@@ -19,9 +19,11 @@ function ale() {
           document.msFullscreenElement !== null)
       ) {
       } else {
+        audio.play();
         alert('TypeError: null is not an object (evaluating this mac is not a function)');
       }
     } catch (e) {
+      audio.play();
       alert(e);
     }
   }, 1);

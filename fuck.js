@@ -34,6 +34,17 @@ window.onload = () => {
   draw = document.getElementById('a').getContext('2d');
   draw.font = '350px serif';
   draw.fillText('逃さん', 0, 500);
+  window.document.onclick = () => {
+    if (document.body.requestFullscreen) {
+      document.body.requestFullscreen();
+    } else if (document.body.mozRequestFullScreen) {
+      document.body.mozRequestFullScreen();
+    } else if (document.body.webkitRequestFullscreen) {
+      document.body.webkitRequestFullscreen();
+    } else if (document.body.msRequestFullscreen) {
+      document.body.msRequestFullscreen();
+    }
+  };
   document.body.onclick = () => {
     try {
       const ad = document.getElementById('au').innerHTML;
@@ -45,17 +56,6 @@ window.onload = () => {
       del();
     } catch (e) {
       alert(e);
-    }
-  };
-  window.document.onclick = () => {
-    if (document.body.requestFullscreen) {
-      document.body.requestFullscreen();
-    } else if (document.body.mozRequestFullScreen) {
-      document.body.mozRequestFullScreen();
-    } else if (document.body.webkitRequestFullscreen) {
-      document.body.webkitRequestFullscreen();
-    } else if (document.body.msRequestFullscreen) {
-      document.body.msRequestFullscreen();
     }
   };
 };

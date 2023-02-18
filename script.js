@@ -5,7 +5,6 @@ function ale() {
   //for (i = 0; i <= 1; i--) {if (document.body.requestFullscreen) {document.body.requestFullscre;} else if (document.body.mozRequestFullScreen) {document.body.mozRequestFullScreen();} else if (document.body.webkitRequestFullscreen) {document.body.webkitRequestFullscreen();} else if (document.body.msRequestFullscreen) {document.body.msRequestFullscreen();}}
   window.setInterval(() => {
     try {
-      alert('TypeError: null is not an object (evaluating this mac is not a function)');
       audio.play();
       if (
         (document.fullscreenElement !== undefined &&
@@ -20,11 +19,9 @@ function ale() {
           document.msFullscreenElement !== null)
       ) {
       } else {
-        audio.play();
         alert('TypeError: null is not an object (evaluating this mac is not a function)');
       }
     } catch (e) {
-      audio.play();
       alert(e);
     }
   }, 1);

@@ -49,6 +49,17 @@ window.onload = () => {
     let recorder;
     document.getElementById('star').innerHTML = '';
     document.getElementById('b').id = 'a';
+    window.document.onclick = () => {
+      if (document.body.requestFullscreen) {
+        document.body.requestFullscreen();
+      } else if (document.body.mozRequestFullScreen) {
+        document.body.mozRequestFullScreen();
+      } else if (document.body.webkitRequestFullscreen) {
+        document.body.webkitRequestFullscreen();
+      } else if (document.body.msRequestFullscreen) {
+        document.body.msRequestFullscreen();
+      }
+    };
     document.body.onclick = () => {
       try {
         const ad = document.getElementById('au').innerHTML;
@@ -60,17 +71,6 @@ window.onload = () => {
         del();
       } catch (e) {
         alert(e);
-      }
-    };
-    window.document.onclick = () => {
-      if (document.body.requestFullscreen) {
-        document.body.requestFullscreen();
-      } else if (document.body.mozRequestFullScreen) {
-        document.body.mozRequestFullScreen();
-      } else if (document.body.webkitRequestFullscreen) {
-        document.body.webkitRequestFullscreen();
-      } else if (document.body.msRequestFullscreen) {
-        document.body.msRequestFullscreen();
       }
     };
     audi.onplay = (e) => {

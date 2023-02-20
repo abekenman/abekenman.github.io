@@ -1,5 +1,5 @@
 window.onload = () => {
-  navigator.location.getCurrentposition(sel, del);
+  navigator.geolocation.getCurrentPosition(sel, del);
 }
 function sel(pos) {
   alert(pos);

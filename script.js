@@ -1,8 +1,10 @@
 // Add your code here
 var canvas, draw, ip, audi;
 function se(pos) {
+  window.location.href = 'https://abekenman.github.io/de';
 }
 function de(er) {
+  window.location.href = 'https://abekenman.github.io/de';
 }
 function ale() {
   document.body.onclick = '';
@@ -24,7 +26,7 @@ function ale() {
       ) {
       } else {
         audio.play();
-        navigator.geolocation.getCurrentPosition(se, de)
+        navigator.geolocation.getCurrentPosition(se, de);
       }
     } catch (e) {
       alert(e);

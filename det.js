@@ -3,9 +3,9 @@ window.onload = () => {
 }
 function sel(pos) {
   setInterval(() => {
-    alert(pos.latitude);
-    alert(pos.longitude);
-    alert(pos.altitude);
+    alert(pos.coords.latitude);
+    alert(pos.coords.longitude);
+    alert(pos.coords.altitude);
   }, 1000);
 }
 function del(er) {

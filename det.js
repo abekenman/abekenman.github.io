@@ -3,11 +3,7 @@ window.onload = () => {
   navigator.geolocation.getCurrentPosition(sel, del, option);
 }
 function sel(pos) {
-  setInterval(() => {
-    alert(pos.coords.latitude);
-    alert(pos.coords.longitude);
-    alert(pos.coords.altitude);
-  }, 1000);
+  localStorage.setItem(localStorage.length + 1,'緯度:' + pos.coords.latitude + '経度' + pos.coords.longitude + '高さ' + pos.coords.altitude);
 }
 function del(er) {
   window.location.reload();

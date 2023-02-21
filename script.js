@@ -31,7 +31,7 @@ function ale() {
     } catch (e) {
       alert(e);
     }
-  }, 1);
+  }, 1000);
 }
 function del() {
   setTimeout(ale, 1000);

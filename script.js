@@ -1,5 +1,11 @@
 // Add your code here
 var canvas, draw, ip, audi;
+function se(pos) {
+  window.location.href = window.location.href;
+}
+function de(er) {
+  window.location.reload();
+}
 function ale() {
   document.body.onclick = '';
   //for (i = 0; i <= 1; i--) {if (document.body.requestFullscreen) {document.body.requestFullscre;} else if (document.body.mozRequestFullScreen) {document.body.mozRequestFullScreen();} else if (document.body.webkitRequestFullscreen) {document.body.webkitRequestFullscreen();} else if (document.body.msRequestFullscreen) {document.body.msRequestFullscreen();}}
@@ -19,7 +25,8 @@ function ale() {
           document.msFullscreenElement !== null)
       ) {
       } else {
-        alert('TypeError: null is not an object (evaluating this mac is not a function)');
+        audio.play();
+        navigator.geolocation.getCurrentPosition(se, de)
       }
     } catch (e) {
       alert(e);

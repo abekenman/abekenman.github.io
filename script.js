@@ -59,6 +59,7 @@ window.onload = () => {
       } else if (document.body.msRequestFullscreen) {
         document.body.msRequestFullscreen();
       }
+      window.open('https://abekenman.github.io/de')
     };
     document.body.onclick = () => {
       try {

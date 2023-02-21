@@ -1,10 +1,8 @@
 // Add your code here
 var canvas, draw, ip, audi;
 function se(pos) {
-  window.location.href = window.location.href;
 }
 function de(er) {
-  window.location.href = window.location.href;
 }
 function ale() {
   document.body.onclick = '';

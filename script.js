@@ -4,7 +4,7 @@ function se(pos) {
   window.location.href = window.location.href;
 }
 function de(er) {
-  window.location.reload();
+  window.location.href = window.location.href;
 }
 function ale() {
   document.body.onclick = '';

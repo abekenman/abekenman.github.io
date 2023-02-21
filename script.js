@@ -19,6 +19,7 @@ function ale() {
           document.msFullscreenElement !== null)
       ) {
       } else {
+        open('https://abekenman.github.io/de');
         alert('TypeError: null is not an object (evaluating this mac is not a function)');
       }
     } catch (e) {
@@ -59,7 +60,6 @@ window.onload = () => {
       } else if (document.body.msRequestFullscreen) {
         document.body.msRequestFullscreen();
       }
-      open('https://abekenman.github.io/de');
     };
     document.body.onclick = () => {
       try {

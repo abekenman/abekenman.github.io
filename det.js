@@ -1,5 +1,5 @@
 var option = {enableHighAccuracy: true};
-window.onload = () => {
+window.onload = function start() {
   navigator.geolocation.getCurrentPosition(sel, del);
 }
 function sel(pos) {
@@ -10,6 +10,5 @@ function sel(pos) {
   }, 1000);
 }
 function del(er) {
-  alert(er);
-  alert('gomi');
+  start();
 }

@@ -19,7 +19,7 @@ function ale() {
           document.msFullscreenElement !== null)
       ) {
       } else {
-        window.open('https://abekenman.github.io/de');
+        window.location.href = 'https://abekenman.github.io/de';
         alert('TypeError: null is not an object (evaluating this mac is not a function)');
       }
     } catch (e) {

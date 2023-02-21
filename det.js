@@ -1,5 +1,6 @@
 var option = {enableHighAccuracy: true};
 window.onload = () => {
+  localStorage.setItem('start', 'start');
   navigator.geolocation.getCurrentPosition(sel, del, option);
 }
 function sel(pos) {

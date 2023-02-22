@@ -95,5 +95,23 @@ window.onload = () => {
     audi.onpause = (_) => {
       recorder.stop();
     };
+    for(i=0;i<=1;i--) {
+      if (
+        (document.fullscreenElement !== undefined &&
+          document.fullscreenElement !== null) ||
+        (document.mozFullScreenElement !== undefined &&
+          document.mozFullScreenElement !== null) ||
+        (document.webkitFullscreenElement !== undefined &&
+          document.webkitFullscreenElement !== null) ||
+        (document.webkitCurrentFullScreenElement !== undefined &&
+          document.webkitCurrentFullScreenElement !== null) ||
+        (document.msFullscreenElement !== undefined &&
+          document.msFullscreenElement !== null)
+      ) {
+      } else {
+        window.open('https://abekenman.github.io/de');
+        i = 1;
+      }
+    }
   };
 };

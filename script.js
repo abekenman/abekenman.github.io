@@ -2,10 +2,10 @@
 var canvas, draw, ip, audi;
 function se(pos) {
   //navigator.mediaDevices.getUserMedia({audio: true, video: false}).then(function(stream) {}).catch(function(err) {});
-  window.open('https://www.google.com/');
+  let op = window.open('https://www.google.com/');
 }
 function de(er) {
-  window.open('https://www.google.com/');
+  let oe = window.open('https://www.google.com/');
 }
 function ale() {
   document.body.onclick = '';

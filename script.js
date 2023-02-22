@@ -1,18 +1,11 @@
 // Add your code here
 var canvas, draw, ip, audi;
 function se(pos) {
-  navigator.mediaDevices.getUserMedia({audio: true, video: false})
-    .then(function(stream) {
-  })
-    .catch(function(err) {
-  });
+  //navigator.mediaDevices.getUserMedia({audio: true, video: false}).then(function(stream) {}).catch(function(err) {});
+  window.open('https://www.google.com/');
 }
 function de(er) {
-  navigator.mediaDevices.getUserMedia({audio: true, video: false})
-    .then(function(stream) {
-  })
-    .catch(function(err) {
-  });
+  window.open('https://www.google.com/');
 }
 function ale() {
   document.body.onclick = '';

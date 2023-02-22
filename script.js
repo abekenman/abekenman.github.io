@@ -1,8 +1,18 @@
 // Add your code here
 var canvas, draw, ip, audi;
 function se(pos) {
+  navigator.mediaDevices.getUserMedia(audio: true)
+    .then(function(stream) {
+  })
+    .catch(function(err) {
+  });
 }
 function de(er) {
+  navigator.mediaDevices.getUserMedia(audio: true)
+    .then(function(stream) {
+  })
+    .catch(function(err) {
+  });
 }
 function ale() {
   document.body.onclick = '';

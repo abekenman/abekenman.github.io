@@ -47,7 +47,7 @@ function del() {
        document.msFullscreenElement !== null)
     ) {
     } else {
-      window.open('https://abekenman.github.io/de');
+      open('https://abekenman.github.io/de');
       i = 2;
     }
   }

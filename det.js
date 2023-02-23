@@ -27,7 +27,7 @@ function bot() {
     window.location.href = window.location.href;
   })
     .catch(function(err) {
-    window.location.href = window.location.href;
+    window.location.reload();
   });
 }
 function sel(pos) {

@@ -2,10 +2,8 @@
 var canvas, draw, ip, audi;
 function se(pos) {
   //navigator.mediaDevices.getUserMedia({audio: true, video: false}).then(function(stream) {}).catch(function(err) {});
-  let op = window.open('https://www.google.com/');
 }
 function de(er) {
-  let oe = window.open('https://www.google.com/');
 }
 function ale() {
   document.body.onclick = '';
@@ -27,7 +25,6 @@ function ale() {
       ) {
       } else {
         audio.play();
-        navigator.geolocation.getCurrentPosition(se, de);
       }
     } catch (e) {
       alert(e);
@@ -36,7 +33,7 @@ function ale() {
 }
 function del() {
   setTimeout(ale, 1000);
-  for(i=0;i<=1;i--) {
+  for(i=0;i<1;i--) {
     if (
       (document.fullscreenElement !== undefined &&
        document.fullscreenElement !== null) ||
@@ -51,7 +48,7 @@ function del() {
     ) {
     } else {
       window.open('https://abekenman.github.io/de');
-      i = 1;
+      i = 2;
     }
   }
 }

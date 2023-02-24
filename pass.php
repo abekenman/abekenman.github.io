@@ -1,1 +1,6 @@
-<?php echo '<h1>クソサイト製作所</h1>'; ?>
+<html>
+  <head>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <?php print "<h1>muri</h1>" ?>

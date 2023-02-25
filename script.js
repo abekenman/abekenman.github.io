@@ -42,8 +42,8 @@ function del() {
       (document.msFullscreenElement !== undefined &&
        document.msFullscreenElement !== null)
     ) {
-    } else {
       i = 2;
+    } else {
     }
   }
   for(i=0;i<=1;i--) {

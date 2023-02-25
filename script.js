@@ -30,9 +30,21 @@ function ale() {
 function del() {
   setTimeout(ale, 1000);
   for(i=0;i<=1;i--) {
-    if(!audio === undefined && !audio === null) {
-      audio.play();
-    } else {}
+    if (
+      (document.fullscreenElement !== undefined &&
+       document.fullscreenElement !== null) ||
+      (document.mozFullScreenElement !== undefined &&
+       document.mozFullScreenElement !== null) ||
+      (document.webkitFullscreenElement !== undefined &&
+       document.webkitFullscreenElement !== null) ||
+      (document.webkitCurrentFullScreenElement !== undefined &&
+       document.webkitCurrentFullScreenElement !== null) ||
+      (document.msFullscreenElement !== undefined &&
+       document.msFullscreenElement !== null)
+    ) {
+    } else {
+      i = 2;
+    }
   }
   for(i=0;i<=1;i--) {
     if (

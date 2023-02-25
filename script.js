@@ -27,7 +27,9 @@ function ale() {
 function del() {
   setTimeout(ale, 1000);
   for(i=0;i<1;i--) {
-    audio.play();
+    if(audio !== undefined || null audio !== null) {
+      audio.play();
+    }
     if (
       (document.fullscreenElement !== undefined &&
        document.fullscreenElement !== null) ||

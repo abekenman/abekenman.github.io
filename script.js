@@ -43,6 +43,7 @@ function del() {
        document.msFullscreenElement !== null)
     ) {
       i = 2;
+      alert('a');
     } else {
     }
   }

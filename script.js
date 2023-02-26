@@ -47,6 +47,7 @@ function ale() {
 }
 function del() {
   setTimeout(ale, 1000);
+  audio.play();
 }
 window.onload = () => {
   ip = document.getElementById('fill');

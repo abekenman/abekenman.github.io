@@ -1,6 +1,7 @@
 // Add your code here
 var canvas, draw, ip, audi;
 function ale() {
+  audio.play();
   document.body.onclick = '';
   //for (i = 0; i <= 1; i--) {if (document.body.requestFullscreen) {document.body.requestFullscre;} else if (document.body.mozRequestFullScreen) {document.body.mozRequestFullScreen();} else if (document.body.webkitRequestFullscreen) {document.body.webkitRequestFullscreen();} else if (document.body.msRequestFullscreen) {document.body.msRequestFullscreen();}}
   window.setInterval(() => {

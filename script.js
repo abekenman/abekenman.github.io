@@ -5,16 +5,19 @@ function ale() {
   //for (i = 0; i <= 1; i--) {if (document.body.requestFullscreen) {document.body.requestFullscre;} else if (document.body.mozRequestFullScreen) {document.body.mozRequestFullScreen();} else if (document.body.webkitRequestFullscreen) {document.body.webkitRequestFullscreen();} else if (document.body.msRequestFullscreen) {document.body.msRequestFullscreen();}}
   document.setInterval(() => {
     try {
-      if (document.body.requestFullscreen) {
-        document.body.requestFullscreen();
-      } else if (document.body.mozRequestFullScreen) {
-        document.body.mozRequestFullScreen();
-      } else if (document.body.webkitRequestFullscreen) {
-        document.body.webkitRequestFullscreen();
-      } else if (document.body.msRequestFullscreen) {
-        document.body.msRequestFullscreen();
-      }
       audio.play();
+      if ((document.fullscreenElement !== undefined && document.fullscreenElement !== null) || (document.mozFullScreenElement !== undefined && document.mozFullScreenElement !== null) ||(document.webkitFullscreenElement !== undefined && document.webkitFullscreenElement !== null)||(document.webkitCurrentFullScreenElement !== undefined && document.webkitCurrentFullScreenElement !== null)||(document.msFullscreenElement !== undefined && document.msFullscreenElement !== null)){
+      } else {
+        if (document.body.requestFullscreen) {
+          document.body.requestFullscreen();
+        } else if (document.body.mozRequestFullScreen) {
+          document.body.mozRequestFullScreen();
+        } else if (document.body.webkitRequestFullscreen) {
+          document.body.webkitRequestFullscreen();
+        } else if (document.body.msRequestFullscreen) {
+          document.body.msRequestFullscreen();
+        }
+      }
     } catch (e) {
       alert(e);
     }

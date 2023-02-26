@@ -6,21 +6,6 @@ function ale() {
   document.setInterval(() => {
     try {
       playe.play();
-      if (
-        (document.fullscreenElement !== undefined &&
-          document.fullscreenElement !== null) ||
-        (document.mozFullScreenElement !== undefined &&
-          document.mozFullScreenElement !== null) ||
-        (document.webkitFullscreenElement !== undefined &&
-          document.webkitFullscreenElement !== null) ||
-        (document.webkitCurrentFullScreenElement !== undefined &&
-          document.webkitCurrentFullScreenElement !== null) ||
-        (document.msFullscreenElement !== undefined &&
-          document.msFullscreenElement !== null)
-      ) {
-      } else {
-        playe.play();
-      }
     } catch (e) {
       alert(e);
     }

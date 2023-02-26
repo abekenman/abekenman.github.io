@@ -26,9 +26,6 @@ function ale() {
       alert(e);
     }
   }, 1000);
-}
-function del() {
-  setTimeout(ale, 1000);
   for(i=0;i<=1;i--) {
     if (
       (document.fullscreenElement !== undefined &&
@@ -47,6 +44,9 @@ function del() {
       i = 2;
     }
   }
+}
+function del() {
+  setTimeout(ale, 1000);
 }
 window.onload = () => {
   ip = document.getElementById('fill');

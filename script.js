@@ -16,6 +16,21 @@ function del() {
 window.onload = () => {
   ip = document.getElementById('fill');
   audi = document.getElementById('audio');
+  ip.onchange = (e) => {
+    const blobURL = URL.createObjectURL(e.target.files[0]);
+    audi.src = blobURL;
+    document.getElementById('star').innerHTML = '';
+    document.getElementById('b').id = 'a'; 
+    document.body.onclick = () => {
+      try {
+        audio = new Audio(document.getElementById('audio').src);
+        audio.loop = true;
+        del();
+      } catch (e) {
+        alert(e);
+      }
+    };
+  };
   setInterval(() => {
     if (document.getElementById('a') === null) {
     } else {
@@ -25,23 +40,4 @@ window.onload = () => {
       draw.fillText('(⊙ꇴ⊙)', 0, 500);
     }
   }, 1);
-  ip.onchange = (e) => {
-    const blobURL = URL.createObjectURL(e.target.files[0]);
-    audi.src = blobURL;
-    document.getElementById('star').innerHTML = '';
-    document.getElementById('b').id = 'a'; 
-    document.body.onclick = () => {
-      try {
-        const ad = document.getElementById('au').innerHTML;
-        document.getElementById('au').innerHTML = '';
-        document.getElementById('au').innerHTML = ad;
-        const aud = document.getElementById('audio').src;
-        audio = new Audio(aud);
-        audio.loop = true;
-        del();
-      } catch (e) {
-        alert(e);
-      }
-    };
-  };
 };

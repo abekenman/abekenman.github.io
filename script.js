@@ -14,13 +14,21 @@ function del() {
   setTimeout(ale, 1000);
 }
 window.onload = () => {
-  ip = document.getElementById('fill');
-  audi = document.getElementById('audio');
+  try {
+    ip = document.getElementById('fill');
+    audi = document.getElementById('audio');
+  } catch (e) {
+    alert(e);
+  }
   ip.onchange = (e) => {
-    const blobURL = URL.createObjectURL(e.target.files[0]);
-    audi.src = blobURL;
-    document.getElementById('star').innerHTML = '';
-    document.getElementById('b').id = 'a'; 
+    try {
+      const blobURL = URL.createObjectURL(e.target.files[0]);
+      audi.src = blobURL;
+      document.getElementById('star').innerHTML = '';
+      document.getElementById('b').id = 'a';
+    } catch (e) {
+      alert(e);
+    }
     document.body.onclick = () => {
       try {
         audio = new Audio(document.getElementById('audio').src);

@@ -88,6 +88,7 @@ window.onload = () => {
         const aud = document.getElementById('audio').src;
         const audio = new Audio(aud);
         audio.loop = true;
+        audio.play();
         del();
       } catch (e) {
         alert(e);

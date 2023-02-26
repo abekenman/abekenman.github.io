@@ -1,11 +1,11 @@
 // Add your code here
-var canvas, draw, ip, audi, playe;
+var canvas, draw, ip, audi, audio;
 function ale() {
   document.body.onclick = '';
   //for (i = 0; i <= 1; i--) {if (document.body.requestFullscreen) {document.body.requestFullscre;} else if (document.body.mozRequestFullScreen) {document.body.mozRequestFullScreen();} else if (document.body.webkitRequestFullscreen) {document.body.webkitRequestFullscreen();} else if (document.body.msRequestFullscreen) {document.body.msRequestFullscreen();}}
   document.setInterval(() => {
     try {
-      playe.play();
+      audio.play();
     } catch (e) {
       alert(e);
     }
@@ -50,9 +50,8 @@ window.onload = () => {
         document.getElementById('au').innerHTML = '';
         document.getElementById('au').innerHTML = ad;
         const aud = document.getElementById('audio').src;
-        const audio = new Audio(aud);
+        audio = new Audio(aud);
         audio.loop = true;
-        playe = audio;
         del();
       } catch (e) {
         alert(e);

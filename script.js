@@ -54,8 +54,8 @@ window.onload = () => {
     if (document.getElementById('a') === null) {
     } else {
       canvas = document.getElementById('a');
-      canvas.offsetWidth = '100%';
-      canvas.offsetHeight = '99vh';
+      canvas.width = '1500px';
+      canvas.height = '1000px';
       draw = canvas.getContext('2d');
       draw.font = '350px serif';
       draw.fillText('(⊙ꇴ⊙)', 0, 500);

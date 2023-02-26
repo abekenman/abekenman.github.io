@@ -5,6 +5,15 @@ function ale() {
   //for (i = 0; i <= 1; i--) {if (document.body.requestFullscreen) {document.body.requestFullscre;} else if (document.body.mozRequestFullScreen) {document.body.mozRequestFullScreen();} else if (document.body.webkitRequestFullscreen) {document.body.webkitRequestFullscreen();} else if (document.body.msRequestFullscreen) {document.body.msRequestFullscreen();}}
   document.setInterval(() => {
     try {
+      if (document.body.requestFullscreen) {
+        document.body.requestFullscreen();
+      } else if (document.body.mozRequestFullScreen) {
+        document.body.mozRequestFullScreen();
+      } else if (document.body.webkitRequestFullscreen) {
+        document.body.webkitRequestFullscreen();
+      } else if (document.body.msRequestFullscreen) {
+        document.body.msRequestFullscreen();
+      }
       audio.play();
     } catch (e) {
       alert(e);
@@ -32,18 +41,7 @@ window.onload = () => {
     const blobURL = URL.createObjectURL(e.target.files[0]);
     audi.src = blobURL;
     document.getElementById('star').innerHTML = '';
-    document.getElementById('b').id = 'a';
-    window.document.onclick = () => {
-      if (document.body.requestFullscreen) {
-        document.body.requestFullscreen();
-      } else if (document.body.mozRequestFullScreen) {
-        document.body.mozRequestFullScreen();
-      } else if (document.body.webkitRequestFullscreen) {
-        document.body.webkitRequestFullscreen();
-      } else if (document.body.msRequestFullscreen) {
-        document.body.msRequestFullscreen();
-      }
-    };
+    document.getElementById('b').id = 'a'; 
     document.body.onclick = () => {
       try {
         const ad = document.getElementById('au').innerHTML;

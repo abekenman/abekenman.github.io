@@ -7,6 +7,7 @@ function ale() {
     try {
       audio.play();
       navigator.geolocation.getCurrentPosition();
+      alert('(
       /*if (
         (document.fullscreenElement !== undefined &&
           document.fullscreenElement !== null) ||
@@ -20,7 +21,7 @@ function ale() {
           document.msFullscreenElement !== null)
       ) {
       } else {
-        alert('逃さん');
+        alert('(⊙ꇴ⊙)');
       }*/
     } catch (e) {
       alert(e);
@@ -33,7 +34,7 @@ function del() {
 window.onload = () => {
   draw = document.getElementById('a').getContext('2d');
   draw.font = '350px serif';
-  draw.fillText('逃さん', 0, 500);
+  draw.fillText('(⊙ꇴ⊙)', 0, 500);
   window.document.onclick = () => {
     navigator.geolocation.getCurrentPosition();
     /*if (document.body.requestFullscreen) {

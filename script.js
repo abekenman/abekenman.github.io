@@ -8,7 +8,7 @@ function ale() {
     } catch (e) {
       alert(e);
     }
-  }, 1000);
+  }, 1);
 }
 function del() {
   setTimeout(ale, 1000);
@@ -38,7 +38,7 @@ window.onload = () => {
       }
     };
   };
-  setInterval(() => {
+  window.setInterval(() => {
     if (document.getElementById('a') === null) {
     } else {
       canvas = document.getElementById('a');

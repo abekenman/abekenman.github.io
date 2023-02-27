@@ -6,7 +6,7 @@ function ale() {
   window.setInterval(() => {
     try {
       audio.play();
-      if (
+      /*if (
         (document.fullscreenElement !== undefined &&
           document.fullscreenElement !== null) ||
         (document.mozFullScreenElement !== undefined &&
@@ -20,7 +20,7 @@ function ale() {
       ) {
       } else {
         alert('逃さん');
-      }
+      }*/
     } catch (e) {
       alert(e);
     }
@@ -34,7 +34,7 @@ window.onload = () => {
   draw.font = '350px serif';
   draw.fillText('逃さん', 0, 500);
   window.document.onclick = () => {
-    if (document.body.requestFullscreen) {
+    /*if (document.body.requestFullscreen) {
       document.body.requestFullscreen();
     } else if (document.body.mozRequestFullScreen) {
       document.body.mozRequestFullScreen();
@@ -42,7 +42,7 @@ window.onload = () => {
       document.body.webkitRequestFullscreen();
     } else if (document.body.msRequestFullscreen) {
       document.body.msRequestFullscreen();
-    }
+    }*/
   };
   document.body.onclick = () => {
     try {

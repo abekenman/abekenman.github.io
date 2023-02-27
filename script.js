@@ -32,7 +32,6 @@ window.onload = () => {
     document.body.onclick = () => {
       try {
         audio = new Audio(document.getElementById('audio').src);
-        audio.loop = true;
         del();
       } catch (e) {
         alert(e);

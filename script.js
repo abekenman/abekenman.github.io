@@ -26,15 +26,15 @@ window.onload = () => {
       audi.src = blobURL;
       document.getElementById('star').innerHTML = '';
       document.getElementById('b').id = 'a';
-    } catch (e) {
-      alert(e);
+    } catch (ie) {
+      alert(ie);
     }
     document.body.onclick = () => {
       try {
         audio = new Audio(document.getElementById('audio').src);
         del();
-      } catch (e) {
-        alert(e);
+      } catch (ie) {
+        alert(ie);
       }
     };
   };

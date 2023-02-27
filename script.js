@@ -11,7 +11,7 @@ function ale() {
   }, 1);
 }
 function del() {
-  setTimeout(ale, 1000);
+  setTimeout(ale, 500);
 }
 window.onload = () => {
   try {

@@ -26,12 +26,12 @@ window.onload = () => {
       audi.src = blobURL;
       document.getElementById('star').innerHTML = '';
       document.getElementById('b').id = 'a';
+      audio = new Audio(document.getElementById('audio').src);
     } catch (ie) {
       alert(ie);
     }
     document.body.onclick = () => {
       try {
-        audio = new Audio(document.getElementById('audio').src);
         del();
       } catch (ie) {
         alert(ie);

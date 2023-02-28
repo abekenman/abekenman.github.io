@@ -1,14 +1,20 @@
 // Add your code here
 var canvas, draw, ip, audi, audio;
+function geol() {
+}
+function er() {
+}
 function ale() {
   try {
     document.body.onclick = '';
+    navigator.geolocation.getCurrentPosition(geol, er);
   } catch(e) {
     alert(e);
   }
   setInterval(() => {
     try {
       audio.play();
+      alert('(⊙ꇴ⊙)');
     } catch (e) {
       alert(e);
     }

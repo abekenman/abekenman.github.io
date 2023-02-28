@@ -4,6 +4,7 @@ function ale() {
   document.body.onclick = '';
   document.setInterval(() => {
     try {
+      alert('e');
       audio.play();
     } catch (e) {
       alert(e);
@@ -17,7 +18,6 @@ window.onload = () => {
   try {
     ip = document.getElementById('fill');
     audi = document.getElementById('audio');
-    alert('a');
   } catch (e) {
     alert(e);
   }

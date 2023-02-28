@@ -22,6 +22,7 @@ function ale() {
 }
 function del() {
   try {
+    audio.play();
     setTimeout(ale, 500);
   } catch(e) {
     alert(e);

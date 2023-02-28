@@ -1,10 +1,13 @@
 // Add your code here
 var canvas, draw, ip, audi, audio;
 function ale() {
-  document.body.onclick = '';
+  try {
+    document.body.onclick = '';
+  } catch(e) {
+    alert(e);
+  }
   document.setInterval(() => {
     try {
-      alert('e');
       audio.play();
     } catch (e) {
       alert(e);
@@ -12,7 +15,11 @@ function ale() {
   }, 1);
 }
 function del() {
-  setTimeout(ale, 500);
+  try {
+    setTimeout(ale, 500);
+  } catch(e) {
+    alert(e);
+  }
 }
 window.onload = () => {
   try {

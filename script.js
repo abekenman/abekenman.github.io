@@ -6,9 +6,8 @@ function ale() {
   } catch(e) {
     alert(e);
   }
-  document.setInterval(() => {
+  setInterval(() => {
     try {
-      alert('ikuu');
       audio.play();
     } catch (e) {
       alert(e);

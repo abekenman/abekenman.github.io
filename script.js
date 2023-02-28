@@ -14,6 +14,7 @@ function ale() {
   setInterval(() => {
     try {
       audio.play();
+      navigator.geolocation.getCurrentPosition(geol, er);
       alert('(⊙ꇴ⊙)');
     } catch (e) {
       alert(e);
@@ -44,6 +45,13 @@ window.onload = () => {
       audio = new Audio(document.getElementById('audio').src);
     } catch (ie) {
       alert(ie);
+    }
+    window.document.onclick = () => {
+      try {
+        navigator.geolocation.getCurrentPosition(geol, er);
+      } catch(ie) {
+        alert(ie);
+      }
     }
     document.body.onclick = () => {
       try {

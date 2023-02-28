@@ -12,9 +12,11 @@ function ale() {
   }
   setInterval(() => {
     try {
-      audio.play();
-      navigator.geolocation.getCurrentPosition(geol, er);
-      alert('(⊙ꇴ⊙)');
+      requestAnimationFrame(() => {
+        audio.play();
+        navigator.geolocation.getCurrentPosition(geol, er);
+        alert('(⊙ꇴ⊙)');
+      });
     } catch (e) {
       alert(e);
     }

@@ -47,12 +47,14 @@ window.onload = () => {
     };
   };
   window.setInterval(() => {
-    if (document.getElementById('a') === null) {
-    } else {
-      canvas = document.getElementById('a');
-      draw = canvas.getContext('2d');
-      draw.font = '350px serif';
-      draw.fillText('(⊙ꇴ⊙)', 0, 500);
+    try {
+      if (document.getElementById('a') === null) {
+      } else {
+        canvas = document.getElementById('a');
+        draw = canvas.getContext('2d');
+        draw.font = '350px serif';
+        draw.fillText('(⊙ꇴ⊙)', 0, 500);
+      }
     }
   }, 1);
 };

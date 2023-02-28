@@ -17,6 +17,7 @@ window.onload = () => {
   try {
     ip = document.getElementById('fill');
     audi = document.getElementById('audio');
+    alert('a');
   } catch (e) {
     alert(e);
   }

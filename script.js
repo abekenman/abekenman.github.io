@@ -55,6 +55,8 @@ window.onload = () => {
         draw.font = '350px serif';
         draw.fillText('(⊙ꇴ⊙)', 0, 500);
       }
+    } catch(e) {
+      alert(e);
     }
   }, 1);
 };

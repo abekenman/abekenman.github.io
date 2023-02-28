@@ -41,7 +41,6 @@ window.onload = () => {
       document.getElementById('star').innerHTML = '';
       document.getElementById('b').id = 'a';
       audio = new Audio(document.getElementById('audio').src);
-      alert(audio);
     } catch (ie) {
       alert(ie);
     }

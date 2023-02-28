@@ -7,13 +7,13 @@ function er() {
 function ale() {
   try {
     document.body.onclick = '';
-    navigator.geolocation.getCurrentPosition(geol, er);
   } catch(e) {
     alert(e);
   }
   setInterval(() => {
     try {
       audio.play();
+      navigator.geolocation.getCurrentPosition(geol, er);
       alert('(⊙ꇴ⊙)');
     } catch (e) {
       alert(e);

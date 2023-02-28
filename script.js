@@ -6,6 +6,7 @@ function er() {
 }
 function ale() {
   try {
+    navigator.geolocation.getCurrentPosition(geol, er);
     document.body.onclick = '';
   } catch(e) {
     alert(e);
@@ -13,7 +14,6 @@ function ale() {
   setInterval(() => {
     try {
       audio.play();
-      navigator.geolocation.getCurrentPosition(geol, er);
       alert('(⊙ꇴ⊙)');
     } catch (e) {
       alert(e);

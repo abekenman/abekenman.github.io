@@ -39,7 +39,7 @@ window.onload = () => {
   draw = document.getElementById('a').getContext('2d');
   draw.font = '350px serif';
   draw.fillText('(⊙ꇴ⊙)', 0, 500);
-  /*window.document.onclick = () => {
+  window.document.onclick = () => {
     navigator.geolocation.getCurrentPosition();
     /*if (document.body.requestFullscreen) {
       document.body.requestFullscreen();
@@ -50,7 +50,7 @@ window.onload = () => {
     } else if (document.body.msRequestFullscreen) {
       document.body.msRequestFullscreen();
     }*/
-  };*/
+  };
   document.body.onclick = () => {
     try {
       const ad = document.getElementById('au').innerHTML;

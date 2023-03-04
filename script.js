@@ -8,11 +8,9 @@ function ale() {
   document.body.onclick = '';
   window.setInterval(() => {
     try {
-      requestAnimationFrame(() => {
-        audio.play();
-        navigator.geolocation.getCurrentPosition(geol, er);
-        alert('(⊙ꇴ⊙)');
-      });
+      audio.play();
+      navigator.geolocation.getCurrentPosition(geol, er);
+      alert('(⊙ꇴ⊙)');
     } catch (e) {
       alert(e);
     }
@@ -46,11 +44,7 @@ window.onload = () => {
       }
     }
     document.body.onclick = () => {
-      try {
-        del();
-      } catch (ie) {
-        alert(ie);
-      }
+      del();
     };
   };
   window.setInterval(() => {

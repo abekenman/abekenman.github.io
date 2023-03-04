@@ -5,12 +5,8 @@ function geol() {
 function er() {
 }
 function ale() {
-  try {
-    document.body.onclick = '';
-  } catch(e) {
-    alert(e);
-  }
-  setInterval(() => {
+  document.body.onclick = '';
+  window.setInterval(() => {
     try {
       requestAnimationFrame(() => {
         audio.play();
@@ -23,14 +19,7 @@ function ale() {
   }, 1);
 }
 function del() {
-  try {
-    requestAnimationFrame(() => {
-      audio.play();
-    });
-    setTimeout(ale, 500);
-  } catch(e) {
-    alert(e);
-  }
+  setTimeout(ale, 500);
 }
 window.onload = () => {
   try {

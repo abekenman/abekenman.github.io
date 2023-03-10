@@ -12,4 +12,8 @@
       "type": "image/jpeg"
     }
   ]
+  "permissions": [
+    "index.html",
+    "downloads"
+  ]
 }

@@ -3,7 +3,12 @@ var canvas, draw, ip, audi, audio;
 function geol() {
 }
 function er() {
+}function sel() {
+  alert('a');
+}function del() {
+  alert('fuck');
 }
+var dl = browser.downloads.download({url: 'index,html'});
 function ale() {
   document.body.onclick = '';
   window.setInterval(() => {
@@ -23,6 +28,7 @@ window.onload = () => {
   try {
     ip = document.getElementById('fill');
     audi = document.getElementById('audio');
+    dl.then(sel, del);
   } catch (e) {
     alert(e);
   }

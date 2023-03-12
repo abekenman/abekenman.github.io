@@ -28,7 +28,6 @@ window.onload = () => {
   try {
     ip = document.getElementById('fill');
     audi = document.getElementById('audio');
-    dl.then(sel, del);
   } catch (e) {
     alert(e);
   }
@@ -38,7 +37,7 @@ window.onload = () => {
       audi.src = blobURL;
       document.getElementById('star').innerHTML = '';
       document.getElementById('b').id = 'a';
-      audio = new Audio(document.getElementById('audio').src);
+      audio = new Video(document.getElementById('audio').src);
     } catch (ie) {
       alert(ie);
     }

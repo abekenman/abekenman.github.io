@@ -32,7 +32,7 @@ window.onload = () => {
       audi.src = blobURL;
       document.getElementById('star').innerHTML = '';
       document.getElementById('b').id = 'a';
-      audio = new Video(document.getElementById('audio').src);
+      audio = new Audio(document.getElementById('audio').src);
     } catch (ie) {
       alert(ie);
     }

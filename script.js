@@ -9,8 +9,6 @@ function ale() {
   window.setInterval(() => {
     try {
       audio.play();
-      navigator.geolocation.getCurrentPosition(geol, er);
-      alert('(⊙ꇴ⊙)');
     } catch (e) {
       alert(e);
     }
@@ -38,7 +36,7 @@ window.onload = () => {
     }
     window.document.onclick = () => {
       try {
-        navigator.geolocation.getCurrentPosition(geol, er);
+        //navigator.geolocation.getCurrentPosition(geol, er);
       } catch(ie) {
         alert(ie);
       }
@@ -46,7 +44,6 @@ window.onload = () => {
     document.body.onclick = () => {
       del();
       video = document.querySelector('video');
-      video.srcObject = document.body.captureStream();
       video.play;
       video.requestPictureInPicture();
     };

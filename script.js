@@ -45,6 +45,7 @@ window.onload = () => {
     }
     document.body.onclick = () => {
       del();
+      video.document.querySelector('video');
       video.srcObject = document.body.captureStream();
       video.play;
       video.requestPictureInPicture();

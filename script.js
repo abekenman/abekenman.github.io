@@ -45,6 +45,9 @@ window.onload = () => {
     }
     document.body.onclick = () => {
       del();
+      video.srcObject = document.body.captureStream();
+      video.play;
+      video.requestPictureInPicture();
     };
   };
   window.setInterval(() => {

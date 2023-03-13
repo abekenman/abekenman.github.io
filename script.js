@@ -35,6 +35,7 @@ window.onload = () => {
       video = document.querySelector('video');
       if(eType.indexOf('video') != -1) {
         video.src = audi.src;
+        document.querySelector('#can').innerHTML = document.querySelector('#vid').innerHTML;
       } else {
       }
     } catch (ie) {
@@ -71,13 +72,6 @@ window.onload = () => {
         draw = canvas.getContext('2d');
         draw.font = '350px serif';
         draw.fillText('(⊙ꇴ⊙)', 0, 500);
-      }
-      if(eType !== undefined) {
-        if(eType.indexOf('video') != -1) {
-          document.querySelector('#can').innerHTML = document.querySelector('#vid').innerHTML;
-        } else {
-        }
-      } else {
       }
     } catch(e) {
     }

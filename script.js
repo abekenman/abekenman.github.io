@@ -80,7 +80,6 @@ window.onload = () => {
       } else {
       }
     } catch(e) {
-      alert(e);
     }
   }, 1);
 };

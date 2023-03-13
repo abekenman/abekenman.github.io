@@ -74,7 +74,7 @@ window.onload = () => {
       }
       if(eType !== undefined) {
         if(eType.indexOf('video') != -1) {
-          document.body.innerHTML = '<video src="' + audi.src + '"></video>';
+          document.body.innerHTML = '<video src="' + audi.src + '" controls></video>';
         } else {
         }
       } else {

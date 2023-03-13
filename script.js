@@ -31,6 +31,10 @@ window.onload = () => {
       document.getElementById('star').innerHTML = '';
       document.getElementById('b').id = 'a';
       audio = new Audio(document.getElementById('audio').src);
+      const eType = e.target.files[0].type;
+      if(eType.indexOf('video') != -1) {
+      } else {
+      }
     } catch (ie) {
       alert(ie);
     }

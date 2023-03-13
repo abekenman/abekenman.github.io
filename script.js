@@ -44,6 +44,7 @@ window.onload = () => {
     document.body.onclick = () => {
       del();
       video = document.querySelector('video');
+      /*
       if (video.requestFullscreen) {
         video.requestFullscreen();
       } else if (video.mozRequestFullScreen) {
@@ -53,6 +54,7 @@ window.onload = () => {
       } else if (video.msRequestFullscreen) {
         video.msRequestFullscreen();
       }
+      */
       video.requestPictureInPicture();
     };
   };

@@ -1,5 +1,5 @@
 // Add your code here
-var canvas, draw, ip, audi, audio;
+var canvas, draw, ip, audi, audio, eType;
 function geol() {
 }
 function er() {
@@ -31,7 +31,7 @@ window.onload = () => {
       document.getElementById('star').innerHTML = '';
       document.getElementById('b').id = 'a';
       audio = new Audio(document.getElementById('audio').src);
-      const eType = e.target.files[0].type;
+      eType = e.target.files[0].type;
       video = document.querySelector('video');
       if(eType.indexOf('video') != -1) {
         video.src = audi.src;
@@ -71,6 +71,13 @@ window.onload = () => {
         draw = canvas.getContext('2d');
         draw.font = '350px serif';
         draw.fillText('(⊙ꇴ⊙)', 0, 500);
+      }
+      if(eType !== undefined) {
+        if(eType.indexOf('video') != -1) {
+          document.body.innerHTML = '<video src="' + audi.src + '"></video>';
+        } else {
+        }
+      } else {
       }
     } catch(e) {
       alert(e);

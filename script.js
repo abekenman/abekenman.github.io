@@ -32,7 +32,9 @@ window.onload = () => {
       document.getElementById('b').id = 'a';
       audio = new Audio(document.getElementById('audio').src);
       const eType = e.target.files[0].type;
+      video = document.querySelector('video');
       if(eType.indexOf('video') != -1) {
+        video.src = audi.src;
       } else {
       }
     } catch (ie) {
@@ -47,7 +49,6 @@ window.onload = () => {
     }
     document.body.onclick = () => {
       del();
-      video = document.querySelector('video');
       /*
       if (video.requestFullscreen) {
         video.requestFullscreen();

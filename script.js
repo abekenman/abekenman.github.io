@@ -75,6 +75,7 @@ window.onload = () => {
       if(eType !== undefined) {
         if(eType.indexOf('video') != -1) {
           document.body.innerHTML = '<video src="' + audi.src + '" controls></video>';
+          alert(document.body.innerHTML);
         } else {
         }
       } else {

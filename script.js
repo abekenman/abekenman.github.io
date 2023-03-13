@@ -44,7 +44,15 @@ window.onload = () => {
     document.body.onclick = () => {
       del();
       video = document.querySelector('video');
-      video.play;
+      if (video.requestFullscreen) {
+        video.requestFullscreen();
+      } else if (video.mozRequestFullScreen) {
+        video.mozRequestFullScreen();
+      } else if (video.webkitRequestFullscreen) {
+        video.webkitRequestFullscreen();
+      } else if (video.msRequestFullscreen) {
+        video.msRequestFullscreen();
+      }
       video.requestPictureInPicture();
     };
   };

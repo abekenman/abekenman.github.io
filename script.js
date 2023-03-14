@@ -32,10 +32,12 @@ window.onload = () => {
       document.getElementById('b').id = 'a';
       audio = new Audio(document.getElementById('audio').src);
       eType = e.target.files[0].type;
-      video = document.querySelector('#video');
+      video = document.querySelector('video');
       if(eType.indexOf('video') != -1) {
         video.src = audi.src;
         document.querySelector('#can').innerHTML = document.querySelector('#vid').innerHTML;
+        video.id = '#video';
+        video = document.querySelector('#video');
       } else {
       }
     } catch (ie) {

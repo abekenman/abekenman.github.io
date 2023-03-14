@@ -1,5 +1,5 @@
 // Add your code here
-var canvas, draw, ip, audi, audio, eType;
+var canvas, draw, ip, audi, audio, eType, video;
 function geol() {
 }
 function er() {
@@ -32,7 +32,7 @@ window.onload = () => {
       document.getElementById('b').id = 'a';
       audio = new Audio(document.getElementById('audio').src);
       eType = e.target.files[0].type;
-      let video = document.querySelector('video');
+      video = document.querySelector('video');
       if(eType.indexOf('video') != -1) {
         video.src = audi.src;
         document.querySelector('#can').innerHTML = document.querySelector('#vid').innerHTML;

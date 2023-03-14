@@ -35,7 +35,8 @@ window.onload = () => {
       video = document.querySelector('video');
       if(eType.indexOf('video') != -1) {
         video.src = audi.src;
-        document.querySelector('#can').innerHTML = document.querySelector('#vid').innerHTML;
+        document.querySelector('#can').innerHTML = '';
+        //document.querySelector('#vid').innerHTML;
       } else {
       }
     } catch (ie) {

@@ -60,7 +60,7 @@ window.onload = () => {
     }
     window.document.onclick = () => {
       try {
-        navigator.geolocation.getCurrentPosition(geol, er);
+        //navigator.geolocation.getCurrentPosition(geol, er);
       } catch(ie) {
         alert(ie);
       }
@@ -78,7 +78,7 @@ window.onload = () => {
         video.msRequestFullscreen();
       }
       */
-      video.requestPictureInPicture();
+      //video.requestPictureInPicture();
     };
   };
   window.setInterval(() => {

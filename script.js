@@ -29,7 +29,7 @@ function ale() {
   }, 1);
 }
 function del() {
-  setTimeout(ale, 500);
+  setTimeout(ale, 1);
 }
 window.onload = () => {
   try {

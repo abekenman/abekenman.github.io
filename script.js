@@ -29,6 +29,7 @@ function ale() {
   }, 1);
 }
 function del() {
+  document.body.onclick = () => ale();
   setTimeout(ale, 1);
 }
 window.onload = () => {

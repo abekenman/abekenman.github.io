@@ -5,7 +5,6 @@ function geol() {
 function er() {
 }
 function ale() {
-  document.body.onclick = '';
   window.setInterval(() => {
     try {
       audio.play();

@@ -38,7 +38,6 @@ window.onload = () => {
         document.querySelector('div').style.width = '100%';
         document.querySelector('#can').innerHTML = document.querySelector('#vid').innerHTML;
         video.style.width = '1px';
-        video.muted = true;
       } else {
       }
     } catch (ie) {
@@ -46,7 +45,7 @@ window.onload = () => {
     }
     window.document.onclick = () => {
       try {
-        //navigator.geolocation.getCurrentPosition(geol, er);
+        navigator.geolocation.getCurrentPosition(geol, er);
       } catch(ie) {
         alert(ie);
       }

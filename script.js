@@ -9,6 +9,13 @@ function ale() {
   window.setInterval(() => {
     try {
       audio.play();
+      if (document.pictureInPictureElement) {
+        document.exitPictureInPicture()
+          .then(() => console.log("Document Exited from Picture-in-Picture mode"))
+          .catch((err) => console.error(err));
+      } else {
+        video.requestPictureInPicture();
+      }
     } catch (e) {
       alert(e);
     }

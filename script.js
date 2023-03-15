@@ -65,7 +65,6 @@ window.onload = () => {
       }
       */
       video.requestPictureInPicture();
-      video.play();
     };
   };
   window.setInterval(() => {

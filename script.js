@@ -7,7 +7,10 @@ function er() {
 function ale() {
   window.setInterval(() => {
     try {
-      audio.play();
+      if(audio.played) {
+      } else {
+        audio.play();
+      }
       if (document.pictureInPictureElement) {
         document.exitPictureInPicture()
           .then(() => console.log("Document Exited from Picture-in-Picture mode"))

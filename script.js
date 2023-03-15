@@ -7,9 +7,9 @@ function er() {
 function ale() {
   window.setInterval(() => {
     try {
-      if(audio.played) {
-      } else {
+      if(audio.played != true) {
         audio.play();
+      } else {
       }
       if (document.pictureInPictureElement) {
         document.exitPictureInPicture()

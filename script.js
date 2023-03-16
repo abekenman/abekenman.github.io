@@ -40,7 +40,9 @@ window.onload = () => {
   try {
     ip = document.getElementById('fill');
     audi = document.getElementById('audio');
-    document.
+    for(i=0;i<=localStorage.length;i++) {
+      document.querySelector('#fif').appendChild(localStorage.getItem(i);
+    }
   } catch (e) {
     alert(e);
   }

@@ -1,8 +1,7 @@
 // Add your code here
 var canvas, draw, ip, audi, audio, eType, video;
-function geol() {
-}
-function er() {
+function storage() {
+  localStorage.setItem(localStorage.length, audio);
 }
 function ale() {
   window.setInterval(() => {
@@ -53,6 +52,7 @@ window.onload = () => {
       audio = new Audio(document.getElementById('audio').src);
       eType = e.target.files[0].type;
       video = document.querySelector('video');
+      document.querySelector('button').onclick = () => storage();
       if(eType.indexOf('video') != -1) {
         video.src = audi.src;
         document.querySelector('div').style.width = '100%';

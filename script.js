@@ -40,6 +40,7 @@ window.onload = () => {
   try {
     ip = document.getElementById('fill');
     audi = document.getElementById('audio');
+    document.
   } catch (e) {
     alert(e);
   }

@@ -1,8 +1,5 @@
 // Add your code here
 var canvas, draw, ip, audi, audio, eType, video;
-function storage() {
-  localStorage.setItem(localStorage.length, audi.src);
-}
 function ale() {
   window.setInterval(() => {
     try {
@@ -38,9 +35,6 @@ window.onload = () => {
   try {
     ip = document.getElementById('fill');
     audi = document.getElementById('audio');
-    for(i=0;i<=localStorage.length;i++) {
-      document.querySelector('#fif').appendChild(localStorage.getItem(i);
-    }
   } catch (e) {
     alert(e);
   }

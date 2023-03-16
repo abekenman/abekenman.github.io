@@ -32,8 +32,6 @@ function ale() {
 }
 function del() {
   document.body.onclick = () => ale();
-  video.play();
-  video.pause();
   setTimeout(ale, 1);
 }
 window.onload = () => {

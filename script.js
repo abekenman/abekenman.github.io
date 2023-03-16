@@ -10,7 +10,7 @@ function ale() {
       if (document.pictureInPictureElement) {
         document.exitPictureInPicture()
           .then(() => console.log("Document Exited from Picture-in-Picture mode"))
-          .catch((err) => console.error(err));
+          .catch((err) => alert(err));
       } else {
         if (video.requestFullscreen) {
           video.requestFullscreen();
@@ -29,7 +29,7 @@ function ale() {
 }
 function del() {
   document.body.onclick = () => ale();
-  setTimeout(ale, 1);
+  setTimeout(ale, 500);
 }
 window.onload = () => {
   try {
@@ -82,7 +82,7 @@ window.onload = () => {
   };
   window.setInterval(() => {
     try {
-      if (document.getElementById('a') === null) {
+      if (document.getElementById('a') == null) {
       } else {
         canvas = document.getElementById('a');
         draw = canvas.getContext('2d');

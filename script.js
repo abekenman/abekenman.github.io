@@ -1,7 +1,7 @@
 // Add your code here
 var canvas, draw, ip, audi, audio, eType, video;
 function storage() {
-  localStorage.setItem(localStorage.length, audio);
+  localStorage.setItem(localStorage.length, audi.src);
 }
 function ale() {
   window.setInterval(() => {

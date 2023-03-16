@@ -47,7 +47,6 @@ window.onload = () => {
       audio = new Audio(document.getElementById('audio').src);
       eType = e.target.files[0].type;
       video = document.querySelector('video');
-      document.querySelector('button').onclick = () => storage();
       if(eType.indexOf('video') != -1) {
         video.src = audi.src;
         document.querySelector('div').style.width = '100%';

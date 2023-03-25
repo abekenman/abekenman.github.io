@@ -8,9 +8,7 @@ function ale() {
         audio.play();
       }
       if (document.pictureInPictureElement) {
-        document.exitPictureInPicture()
-          .then(() => console.log("Document Exited from Picture-in-Picture mode"))
-          .catch(err => alert(err + 'お前キモすぎやねん'));
+        document.exitPictureInPicture();
       } else {
         if (video.requestFullscreen) {
           video.requestFullscreen();

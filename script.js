@@ -10,7 +10,7 @@ function ale() {
       if (document.pictureInPictureElement) {
         document.exitPictureInPicture()
           .then(() => console.log("Document Exited from Picture-in-Picture mode"))
-          .catch(err => alert(err));
+          .catch(err => alert(err + 'お前キモすぎやねん'));
       } else {
         if (video.requestFullscreen) {
           video.requestFullscreen();

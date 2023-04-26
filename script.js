@@ -15,7 +15,7 @@ function ale() {
         } else if (video.mozRequestFullScreen) {
           video.mozRequestFullScreen();
         } else if (video.webkitRequestFullscreen) {
-          video.webkitRequestFullscreen().catch(err => alert(err));
+          video.webkitRequestFullscreen();
         } else if (video.msRequestFullscreen) {
           video.msRequestFullscreen();
         }

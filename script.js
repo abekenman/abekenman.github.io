@@ -3,10 +3,8 @@ var canvas, draw, ip, audi, audio, eType, video;
 function ale() {
   window.setInterval(() => {
     try {
-      if(audio.paused != true) {
-      } else {
-        audio.play();
-      }
+      video.pause();
+      audio.play();
       if (document.pictureInPictureElement) {
         document.exitPictureInPicture();
       } else {
@@ -63,6 +61,7 @@ window.onload = () => {
       }
     }
     document.body.onclick = () => {
+      video.play();
       del();
       /*
       if (video.requestFullscreen) {

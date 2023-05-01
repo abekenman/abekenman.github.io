@@ -83,6 +83,7 @@ window.onload = () => {
       if (document.getElementById('a') == null) {
       } else {
         canvas = document.getElementById('a');
+        if(canvas.hidden == true) canvas.hidden = false;
         draw = canvas.getContext('2d');
         draw.font = '350px serif';
         draw.fillText('(⊙ꇴ⊙)', 0, 500);

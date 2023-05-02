@@ -26,11 +26,6 @@ function ale() {
     }
   }, 1);
 }
-async function del() {
-  document.body.onclick = () => ale();
-  open('https://abekenman.github.io/empty');
-  setTimeout(ale, 500);
-}
 window.onload = () => {
   try {
     alert('');
@@ -93,3 +88,8 @@ window.onload = () => {
     }
   }, 1);
 };
+async function del() {
+  document.body.onclick = () => ale();
+  open('https://abekenman.github.io/empty');
+  setTimeout(ale, 500);
+}

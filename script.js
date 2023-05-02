@@ -41,10 +41,9 @@ window.onload = () => {
   ip.onchange = (e) => {
     try {
       const blobURL = URL.createObjectURL(e.target.files[0]);
-      audi.src = blobURL;
       document.getElementById('star').innerHTML = '';
       document.getElementById('b').id = 'a';
-      audio = new Audio(document.getElementById('audio').src);
+      audio = new Audio(blobURL);
       eType = e.target.files[0].type;
       video = document.querySelector('video');
     } catch (ie) {
@@ -58,8 +57,12 @@ window.onload = () => {
       }
     }
     document.body.onclick = () => {
-      video.play();
-      del();
+      try {
+        video.play();
+        del();
+      } catch(iee) {
+        alert(iee);
+      }
       /*
       if (video.requestFullscreen) {
         video.requestFullscreen();

@@ -33,6 +33,7 @@ async function del() {
 }
 window.onload = () => {
   try {
+    alert('');
     ip = document.getElementById('fill');
     audi = document.getElementById('audio');
   } catch (e) {

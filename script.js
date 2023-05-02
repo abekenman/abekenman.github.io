@@ -6,7 +6,7 @@ function ale() {
     try {
       video.pause();
       if(nff == true) {
-        audio.play();
+        audi.play();
         if (document.pictureInPictureElement) {
           document.exitPictureInPicture();
         } else {

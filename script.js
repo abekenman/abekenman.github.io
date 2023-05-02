@@ -1,12 +1,12 @@
 // Add your code here
 var canvas, draw, ip, audi, audio, eType, video;
 var nff = false;
-function ale() {
+async function ale() {
   window.setInterval(() => {
     try {
       video.pause();
       if(nff == true) {
-        audi.play();
+        await audi.play();
         if (document.pictureInPictureElement) {
           document.exitPictureInPicture();
         } else {

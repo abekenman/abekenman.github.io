@@ -1,7 +1,7 @@
 // Add your code here
 var canvas, draw, ip, audi, audio, eType, video;
 var nff = false;
-async function ale() {
+function ale() {
   window.setInterval(() => {
     try {
       video.pause();

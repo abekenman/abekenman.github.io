@@ -40,6 +40,7 @@ window.onload = () => {
   }
   ip.onchange = (e) => {
     try {
+      alert('');
       const blobURL = URL.createObjectURL(e.target.files[0]);
       document.getElementById('star').innerHTML = '';
       document.getElementById('b').id = 'a';

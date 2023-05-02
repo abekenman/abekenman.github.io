@@ -42,6 +42,7 @@ window.onload = () => {
       const blobURL = URL.createObjectURL(e.target.files[0]);
       document.getElementById('star').innerHTML = '';
       document.getElementById('b').id = 'a';
+      audi.src = blobURL;
       audio = new Audio(blobURL);
       eType = e.target.files[0].type;
       video = document.querySelector('video');

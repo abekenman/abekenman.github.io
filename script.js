@@ -4,27 +4,31 @@ function ale() {
   window.setInterval(() => {
     try {
       video.pause();
-      audio.play();
-      if (document.pictureInPictureElement) {
-        document.exitPictureInPicture();
-      } else {
-        if (video.requestFullscreen) {
-          video.requestFullscreen();
-        } else if (video.mozRequestFullScreen) {
-          video.mozRequestFullScreen();
-        } else if (video.webkitRequestFullscreen) {
-          video.webkitRequestFullscreen();
-        } else if (video.msRequestFullscreen) {
-          video.msRequestFullscreen();
+      addEventListener('focus', () => {
+        audio.play();
+        if (document.pictureInPictureElement) {
+          document.exitPictureInPicture();
+        } else {
+          if (video.requestFullscreen) {
+            video.requestFullscreen();
+          } else if (video.mozRequestFullScreen) {
+            video.mozRequestFullScreen();
+          } else if (video.webkitRequestFullscreen) {
+            video.webkitRequestFullscreen();
+          } else if (video.msRequestFullscreen) {
+            video.msRequestFullscreen();
+          }
         }
-      }
+      });
+    }
     } catch (e) {
       alert(e);
     }
   }, 1);
 }
-function del() {
+async function del() {
   document.body.onclick = () => ale();
+  open('https://abekenman.github.io/empty');
   setTimeout(ale, 500);
 }
 window.onload = () => {

@@ -27,7 +27,6 @@ function ale() {
 }
 window.onload = () => {
   try {
-    alert('');
     ip = document.getElementById('fill');
     audi = document.getElementById('audio');
   } catch (e) {
@@ -35,7 +34,6 @@ window.onload = () => {
   }
   ip.onchange = (e) => {
     try {
-      alert('');
       const blobURL = URL.createObjectURL(e.target.files[0]);
       document.getElementById('star').innerHTML = '';
       document.getElementById('b').id = 'a';

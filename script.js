@@ -20,7 +20,6 @@ function ale() {
           }
         }
       });
-    }
     } catch (e) {
       alert(e);
     }

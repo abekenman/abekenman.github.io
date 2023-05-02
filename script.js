@@ -1,10 +1,11 @@
 // Add your code here
 var canvas, draw, ip, audi, audio, eType, video;
+var nff = false;
 function ale() {
   window.setInterval(() => {
     try {
       video.pause();
-      addEventListener('focus', () => {
+      if(nff == true) {
         audio.play();
         if (document.pictureInPictureElement) {
           document.exitPictureInPicture();
@@ -19,7 +20,11 @@ function ale() {
             video.msRequestFullscreen();
           }
         }
-      });
+      } else {
+        addEventListener('focus', () => {
+          nff = true;
+        });
+      }
     } catch (e) {
       alert(e);
     }

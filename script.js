@@ -6,7 +6,7 @@ async function ale() {
     try {
       video.pause();
       if(nff == true) {
-        await audi.play();
+        audi.play();
         if (document.pictureInPictureElement) {
           document.exitPictureInPicture();
         } else {

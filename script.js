@@ -18,13 +18,13 @@ function alo() {
         video.msRequestFullscreen();
       } else {
       }
-      if( document.exitFullscreen ) {
+      if (document.exitFullscreen) {
         document.exitFullscreen();
-      } else if( document.mozCancelFullScreen ) {
+      } else if (document.mozCancelFullScreen) {
         document.mozCancelFullScreen();
-      } else if( document.webkitCancelFullScreen ) {
+      } else if (document.webkitCancelFullScreen) {
         document.webkitCancelFullScreen();
-      } else if( document.msExitFullscreen ) {
+      } else if (document.msExitFullscreen) {
         document.msExitFullscreen();
       } else {
       }

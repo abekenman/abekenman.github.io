@@ -21,6 +21,7 @@ function ale() {
             video.msRequestFullscreen();
           }
         }
+        audi.play();
       } else {
         addEventListener('focus', () => {
           nff = true;

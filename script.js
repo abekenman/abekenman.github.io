@@ -4,7 +4,6 @@ var nff = false;
 function ale() {
   window.setInterval(() => {
     try {
-      video.play();
       video.pause();
       if(nff == true) {
         audi.play();

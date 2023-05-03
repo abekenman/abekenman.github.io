@@ -3,6 +3,7 @@ var canvas, draw, ip, audi, audio, eType, video;
 var nff = false;
 function alo() {
   window.setInterval(() => {
+    video.pause();
     audi.play();
     if (document.pictureInPictureElement) {
       document.exitPictureInPicture();

@@ -4,7 +4,7 @@ var nff = false;
 function alo() {
   window.setInterval(() => {
     video.pause();
-    audi.play();
+    audio.play();
     /*
     if (document.pictureInPictureElement) {
       document.exitPictureInPicture();
@@ -20,7 +20,7 @@ function alo() {
       }
     }
     */
-    audi.play();
+    audio.play();
   }, 1);
 }   
 function ale() {
@@ -28,7 +28,7 @@ function ale() {
     try {
       video.pause();
       if(nff == true) {
-        audi.play();
+        audio.play();
         setTimeout(() => {
           alo();
         }, 500);

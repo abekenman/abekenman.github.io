@@ -28,7 +28,7 @@ function ale() {
         audi.play();
         setTimeout(() => {
           alo();
-        }, 50);
+        }, 500);
       } else {
         addEventListener('focus', () => {
           nff = true;

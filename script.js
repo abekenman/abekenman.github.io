@@ -5,6 +5,7 @@ function alo() {
   window.setInterval(() => {
     video.pause();
     audi.play();
+    /*
     if (document.pictureInPictureElement) {
       document.exitPictureInPicture();
     } else {
@@ -18,6 +19,7 @@ function alo() {
         video.msRequestFullscreen();
       }
     }
+    */
     audi.play();
   }, 1);
 }   

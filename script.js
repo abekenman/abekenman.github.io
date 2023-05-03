@@ -1,26 +1,34 @@
 // Add your code here
 var canvas, draw, ip, audi, audio, eType, video;
 var nff = false;
+function alo() {
+  window.setInterval(() => {
+    audi.play();
+    if (document.pictureInPictureElement) {
+      document.exitPictureInPicture();
+    } else {
+      if (video.requestFullscreen) {
+        video.requestFullscreen();
+      } else if (video.mozRequestFullScreen) {
+        video.mozRequestFullScreen();
+      } else if (video.webkitRequestFullscreen) {
+        video.webkitRequestFullscreen();
+      } else if (video.msRequestFullscreen) {
+        video.msRequestFullscreen();
+      }
+    }
+    audi.play();
+  }, 1);
+}   
 function ale() {
   window.setInterval(() => {
     try {
       video.pause();
       if(nff == true) {
         audi.play();
-        if (document.pictureInPictureElement) {
-          document.exitPictureInPicture();
-        } else {
-          if (video.requestFullscreen) {
-            video.requestFullscreen();
-          } else if (video.mozRequestFullScreen) {
-            video.mozRequestFullScreen();
-          } else if (video.webkitRequestFullscreen) {
-            video.webkitRequestFullscreen();
-          } else if (video.msRequestFullscreen) {
-            video.msRequestFullscreen();
-          }
-        }
-        audi.play();
+        setTimeout(() => {
+          alo();
+        }, 50);
       } else {
         addEventListener('focus', () => {
           nff = true;

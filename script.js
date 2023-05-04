@@ -89,6 +89,8 @@ window.onload = () => {
     }
     document.body.onclick = () => {
       try {
+        audio.play();
+        audio.pause();
         video.play();
         del();
       } catch(iee) {

@@ -45,7 +45,7 @@ function ale() {
       } else {
         window.onfocus = () => {
           nff = true;
-        });
+        }
       }
     } catch (e) {
       alert(e);

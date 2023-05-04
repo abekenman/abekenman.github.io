@@ -1,7 +1,8 @@
 // Add your code here
-var canvas, draw, ip, audi, audio, eType, video;
+var canvas, draw, ip, audi, audio, eType, video, cleset;
 var nff = false;
 function alo() {
+  clearInterval(cleset);
   window.setInterval(() => {
     video.pause();
     audio.play();
@@ -43,7 +44,7 @@ function alo() {
   }, 1);
 }   
 function ale() {
-  window.setInterval(() => {
+  cleset = window.setInterval(() => {
     try {
       video.pause();
       if(nff == true) {
@@ -125,7 +126,7 @@ window.onload = () => {
   }, 1);
 };
 async function del() {
-  document.body.onclick = () => ale();
+  document.body.onclick = () => {};
   open('https://abekenman.github.io/empty');
   setTimeout(ale, 500);
 }

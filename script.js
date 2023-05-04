@@ -43,7 +43,7 @@ function ale() {
           alo();
         }, 500);
       } else {
-        addEventListener('focus', () => {
+        window.onfocus = () => {
           nff = true;
         });
       }

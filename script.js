@@ -86,7 +86,7 @@ window.onload = () => {
           video.msRequestFullscreen();
         } else {
         }
-        setTimeout(del, 1);
+        del();
       } catch(iee) {
         alert(iee);
       }

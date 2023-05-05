@@ -5,6 +5,7 @@ function alo() {
   try {
     clearInterval(cleset);
     window.setInterval(() => {
+      alert('');
       video.pause();
       audio.play();
       if (document.pictureInPictureElement) {
@@ -29,7 +30,6 @@ function alo() {
 function ale() {
   cleset = window.setInterval(() => {
     try {
-      video.pause();
       if(nff == true) {
         audio.play();
         setTimeout(() => {

@@ -5,7 +5,6 @@ function alo() {
   try {
     clearInterval(cleset);
     window.setInterval(() => {
-      alert('');
       video.pause();
       audio.play();
       if (document.pictureInPictureElement) {

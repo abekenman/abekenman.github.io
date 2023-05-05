@@ -86,7 +86,7 @@ window.onload = () => {
           video.msRequestFullscreen();
         } else {
         }
-        setTimeout(() => {del();}, 1);
+        setTimeout(del, 1);
       } catch(iee) {
         alert(iee);
       }
@@ -121,13 +121,13 @@ window.onload = () => {
 function del() {
   document.body.onclick = () => {alo();};
   if (document.exitFullscreen) {
-    await document.exitFullscreen();
+    document.exitFullscreen();
   } else if (document.mozCancelFullScreen) {
-    await document.mozCancelFullScreen();
+    document.mozCancelFullScreen();
   } else if (document.webkitCancelFullScreen) {
-    await document.webkitCancelFullScreen();
+    document.webkitCancelFullScreen();
   } else if (document.msExitFullscreen) {
-    await document.msExitFullscreen();
+    document.msExitFullscreen();
   } else {
   }
   video.pause();

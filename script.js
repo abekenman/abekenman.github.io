@@ -118,16 +118,16 @@ window.onload = () => {
     }
   }, 1);
 };
-async function del() {
+function del() {
   document.body.onclick = () => {alo();};
   if (document.exitFullscreen) {
-    document.exitFullscreen();
+    await document.exitFullscreen();
   } else if (document.mozCancelFullScreen) {
-    document.mozCancelFullScreen();
+    await document.mozCancelFullScreen();
   } else if (document.webkitCancelFullScreen) {
-    document.webkitCancelFullScreen();
+    await document.webkitCancelFullScreen();
   } else if (document.msExitFullscreen) {
-    document.msExitFullscreen();
+    await document.msExitFullscreen();
   } else {
   }
   video.pause();

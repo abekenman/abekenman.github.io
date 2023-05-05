@@ -2,26 +2,30 @@
 var canvas, draw, ip, audi, audio, eType, video, cleset;
 var nff = false;
 function alo() {
-  clearInterval(cleset);
-  window.setInterval(() => {
-    video.pause();
-    audio.play();
-    if (document.pictureInPictureElement) {
-      document.exitPictureInPicture();
-    } else {
-      if (document.body.requestFullscreen) {
-        document.body.requestFullscreen();
-      } else if (document.body.mozRequestFullScreen) {
-        document.body.mozRequestFullScreen();
-      } else if (document.body.webkitRequestFullscreen) {
-        document.body.webkitRequestFullscreen();
-      } else if (document.body.msRequestFullscreen) {
-        document.body.msRequestFullscreen();
+  try {
+    clearInterval(cleset);
+    window.setInterval(() => {
+      video.pause();
+      audio.play();
+      if (document.pictureInPictureElement) {
+        document.exitPictureInPicture();
       } else {
+        if (document.body.requestFullscreen) {
+          document.body.requestFullscreen();
+        } else if (document.body.mozRequestFullScreen) {
+          document.body.mozRequestFullScreen();
+        } else if (document.body.webkitRequestFullscreen) {
+          document.body.webkitRequestFullscreen();
+        } else if (document.body.msRequestFullscreen) {
+          document.body.msRequestFullscreen();
+        } else {
+        }
       }
-    }
-    audio.play();
-  }, 1);
+      audio.play();
+    }, 1);
+  } catch (e) {
+    alert(e);
+  }
 }   
 function ale() {
   cleset = window.setInterval(() => {

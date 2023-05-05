@@ -21,7 +21,6 @@ function alo() {
         } else {
         }
       }
-      audio.play();
     }, 1);
   } catch (e) {
     alert(e);

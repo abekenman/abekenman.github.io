@@ -29,16 +29,6 @@ function alo() {
 function ale() {
   cleset = window.setInterval(() => {
     try {
-      if (document.body.requestFullscreen) {
-        document.body.requestFullscreen();
-      } else if (document.body.mozRequestFullScreen) {
-        document.body.mozRequestFullScreen();
-      } else if (document.body.webkitRequestFullscreen) {
-        document.body.webkitRequestFullscreen();
-      } else if (document.body.msRequestFullscreen) {
-        document.body.msRequestFullscreen();
-      } else {
-      }
       video.pause();
       if(nff == true) {
         audio.play();
@@ -96,7 +86,7 @@ window.onload = () => {
           video.msRequestFullscreen();
         } else {
         }
-        del();
+        setTimeout(() => {del();}, 1);
       } catch(iee) {
         alert(iee);
       }
@@ -140,6 +130,7 @@ async function del() {
     document.msExitFullscreen();
   } else {
   }
+  video.pause();
   open('https://abekenman.github.io/empty');
   setTimeout(ale, 500);
 }

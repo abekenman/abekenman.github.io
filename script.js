@@ -31,6 +31,7 @@ function ale() {
     cleset = window.setInterval(() => {
       try {
         if(nff == true) {
+          alert('');
           audio.play();
           alo();
         } else {

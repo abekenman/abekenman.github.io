@@ -27,22 +27,24 @@ function alo() {
   }
 }   
 function ale() {
-  cleset = window.setInterval(() => {
-    try {
-      if(nff == true) {
-        audio.play();
-        setTimeout(() => {
-          alo();
-        }, 500);
-      } else {
-        window.onfocus = () => {
-          nff = true;
+  setTimeout(() => {
+    cleset = window.setInterval(() => {
+      try {
+        if(nff == true) {
+          audio.play();
+          setTimeout(() => {
+            alo();
+          }, 500);
+        } else {
+          window.onfocus = () => {
+            nff = true;
+          }
         }
+      } catch (e) {
+        alert(e);
       }
-    } catch (e) {
-      alert(e);
-    }
-  }, 1);
+    }, 1);
+  }, 500);
 }
 window.onload = () => {
   try {

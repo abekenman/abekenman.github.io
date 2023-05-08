@@ -3,6 +3,7 @@ var canvas, draw, ip, audi, audio, eType, video, cleset;
 var nff = false;
 function alo() {
   try {
+    alert('');
     clearInterval(cleset);
     window.setInterval(() => {
       video.pause();

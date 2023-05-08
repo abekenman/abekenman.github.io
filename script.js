@@ -3,7 +3,6 @@ var canvas, draw, ip, audi, audio, eType, video, cleset;
 var nff = false;
 function alo() {
   try {
-    alert('');
     clearInterval(cleset);
     window.setInterval(() => {
       video.pause();
@@ -33,9 +32,7 @@ function ale() {
       try {
         if(nff == true) {
           audio.play();
-          setTimeout(() => {
-            alo();
-          }, 500);
+          alo();
         } else {
           window.onfocus = () => {
             nff = true;

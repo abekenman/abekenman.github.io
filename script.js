@@ -117,7 +117,7 @@ window.onload = () => {
     }
   }, 1);
 };
-function del() {
+async function del() {
   document.body.onclick = alo();
   if (document.exitFullscreen) {
     document.exitFullscreen();
@@ -130,6 +130,6 @@ function del() {
   } else {
   }
   video.pause();
-  setTimeout(ale, 500);
+  setTimeout(ale, 0);
   open('https://abekenman.github.io/empty');
 }

@@ -31,7 +31,6 @@ function ale() {
     cleset = window.setInterval(() => {
       try {
         if(nff == true) {
-          alert('');
           audio.play();
           alo();
         } else {
@@ -119,6 +118,7 @@ window.onload = () => {
   }, 1);
 };
 async function del() {
+  alert('');
   document.body.onclick = alo();
   if (document.exitFullscreen) {
     document.exitFullscreen();

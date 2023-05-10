@@ -77,7 +77,8 @@ onload = () => {
     navigator.mediaDevices
       .getUserMedia(constrains)
       .then(function (stream) {
-        video.srcObject = stream;//
+        video.srcObject = stream;
+      video.play();
       })
       .catch(function (err) {
         console.log('An error occured! ' + err);

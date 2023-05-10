@@ -87,7 +87,7 @@ onload = () => {
 
   function startRecorder() {
     navigator.mediaDevices.getUserMedia(constrains).then(function (stream) {
-      recorder = new MediaRecorder(stream, {mimeType : 'video/mp4'});
+      recorder = new MediaRecorder(stream, {audioBitsPerSecond : 128000, videoBitsPerSecond : 2500000, mimeType: 'video/mp4'});
       recorder.start();
       recorder.ondataavailable = function (e) {
         var testvideo = document.getElementById('test');

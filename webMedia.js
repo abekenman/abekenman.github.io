@@ -94,8 +94,8 @@ onload = () => {
         testvideo.setAttribute('controls', '');
         testvideo.setAttribute('width', width);
         testvideo.setAttribute('height', height);
-        var outputdata = window.URL.createObjectURL(outputdata);
-        record_data.push(e.data);
+        var outputdata = window.URL.createObjectURL(e.data);
+        record_data.push(outputdata);
         testvideo.src = outputdata;
       };
     });

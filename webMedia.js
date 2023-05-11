@@ -55,8 +55,8 @@ onload = () => {
 
     stopbutton.addEventListener('click', function (ev) {
       recorder.stop();
-      console.log(record_data);
-      var blob = new Blob(record_data, { type: 'video/mp4' });
+      console.log(record_data[0]);
+      var blob = new Blob(record_data[0], { type: 'video/mp4' });
       var url = window.URL.createObjectURL(blob);
       var a = document.createElement('a');
       document.body.appendChild(a);

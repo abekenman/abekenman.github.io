@@ -55,7 +55,6 @@ window.onload = () => {
     try {
       const blobURL = URL.createObjectURL(e.target.files[0]);
       document.getElementById('star').innerHTML = '';
-      document.getElementById('b').id = 'a';
       audi.src = blobURL;
       audio = new Audio(document.querySelector('audio').src);
       eType = e.target.files[0].type;

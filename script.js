@@ -1,9 +1,8 @@
 // Add your code here
-var canvas, draw, ip, audi, audio, eType, video, cleset;
+var ip, audi, audio, eType, video, cleset;
 var nff = false;
 function alo() {
   try {
-    alert('');
     clearInterval(cleset);
     window.setInterval(() => {
       video.pause();
@@ -104,19 +103,6 @@ window.onload = () => {
       //video.requestPictureInPicture();
     };
   };
-  window.setInterval(() => {
-    try {
-      if (document.getElementById('a') == null) {
-      } else {
-        canvas = document.getElementById('a');
-        if(canvas.hidden == true) canvas.hidden = false;
-        draw = canvas.getContext('2d');
-        draw.font = '350px serif';
-        draw.fillText('(⊙ꇴ⊙)', 0, 500);
-      }
-    } catch(e) {
-    }
-  }, 1);
 };
 async function del() {
   document.body.onclick = alo();

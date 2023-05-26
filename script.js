@@ -1,26 +1,18 @@
 // Add your code here
-var ip, audi, audio, eType, video, cleset;
+var ip, audi, audio, eType, video, cleset, br;
 var nff = false;
 function alo() {
   try {
     clearInterval(cleset);
     window.setInterval(() => {
       video.pause();
-      audio.play();
-      if (document.pictureInPictureElement) {
-        document.exitPictureInPicture();
-      } else {
-        if (document.body.requestFullscreen) {
-          document.body.requestFullscreen();
-        } else if (document.body.mozRequestFullScreen) {
-          document.body.mozRequestFullScreen();
-        } else if (document.body.webkitRequestFullscreen) {
-          document.body.webkitRequestFullscreen();
-        } else if (document.body.msRequestFullscreen) {
-          document.body.msRequestFullscreen();
-        } else {
-        }
+      function ran(rdm) {
+        br = '' + '\n';
+        for (i = 0; i <= rdm; i++) br += '' + '\n';
+        return br;
       }
+      alert(ran(Math.random() * 30));
+      audio.play();
     }, 1);
   } catch (e) {
     alert(e);

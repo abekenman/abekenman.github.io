@@ -1,8 +1,8 @@
 {
   "name": "Abekenman",
   "short_name": "Abekenman",
-  "theme_color": "#2196f3",
-  "background_color": "#2196f3",
+  "theme_color": "#ffffff",
+  "background_color": "#ffffff",
   "display": "fullscreen",
   "start_url": "./index.html",
   "icons": [

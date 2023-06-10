@@ -1,6 +1,7 @@
 const CACHE_NAME = 'pwa-sample-caches-v1';
 // Cache targets
 const urlsToCache = [
+  './empty.html',
   './scr.json',
   './Abekenman.jpg'
 ];

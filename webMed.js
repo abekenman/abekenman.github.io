@@ -2,8 +2,7 @@
 var rec;
 navigator.mediaDevices
   .getUserMedia({
-    video: true,
-    audio: true, // マイクから音声も取得する場合はtrue
+    video: { facingMode: 'environment'}
   })
   .then((media) => {
     document.querySelector('video').srcObject = media;

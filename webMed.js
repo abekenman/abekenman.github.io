@@ -2,7 +2,8 @@
 var rec;
 navigator.mediaDevices
   .getUserMedia({
-    video: { facingMode: { exact: "environment" } }
+    video: { facingMode: { exact: "environment" } },
+    audio: false
   })
   .then((media) => {
     document.querySelector('video').srcObject = media;

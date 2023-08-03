@@ -2,7 +2,7 @@ const CACHE_NAME = 'pwa-sample-caches-v1';
 // Cache targets
 const urlsToCache = [
   './webm.json',
-  './goog.webp'
+  './Goog.webp'
 ];
 
 self.addEventListener('install', (event) => {

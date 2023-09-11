@@ -12,7 +12,7 @@ navigator.mediaDevices
       try {
         rec.start();
         document.querySelector('video').play();
-        document.querySelector('video').webkitRequestFullscreen();
+        document.querySelector('video').hidden = true;
         document.onclick = () => {
           rec.stop();
           var a = document.querySelector('a');

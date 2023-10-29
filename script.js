@@ -37,12 +37,9 @@ function ale() {
   }, 500);
 }
 window.onload = () => {
-  try {
-    ip = document.getElementById('fill');
-    audi = document.getElementById('audio');
-  } catch (e) {
-    alert(e);
-  }
+  navigator.serviceWorker.register('manifest.js');
+  ip = document.getElementById('fill');
+  audi = document.getElementById('audio');
   ip.onchange = (e) => {
     try {
       const blobURL = URL.createObjectURL(e.target.files[0]);
@@ -54,33 +51,12 @@ window.onload = () => {
     } catch (ie) {
       alert(ie);
     }
-    window.document.onclick = () => {
-      try {
-        //navigator.geolocation.getCurrentPosition(geol, er);
-      } catch(ie) {
-        alert(ie);
-      }
+    document.onclick = () => {
     }
     document.body.onclick = () => {
-      try {
-        audio.play();
-        audio.pause();
-        video.play();
-        if (video.requestFullscreen) {
-          video.requestFullscreen();
-        } else if (video.mozRequestFullScreen) {
-          video.mozRequestFullScreen();
-        } else if (video.webkitRequestFullscreen) {
-          video.webkitRequestFullscreen();
-        } else if (video.msRequestFullscreen) {
-          video.msRequestFullscreen();
-        } else {
-        }
-        del();
-      } catch(iee) {
-        alert(iee);
-      }
-      /*
+      audio.play();
+      audio.pause();
+      video.play();
       if (video.requestFullscreen) {
         video.requestFullscreen();
       } else if (video.mozRequestFullScreen) {
@@ -89,13 +65,13 @@ window.onload = () => {
         video.webkitRequestFullscreen();
       } else if (video.msRequestFullscreen) {
         video.msRequestFullscreen();
+      } else {
       }
-      */
-      //video.requestPictureInPicture();
+      del();
     };
   };
 };
-async function del() {
+function del() {
   document.body.onclick = alo();
   if (document.exitFullscreen) {
     document.exitFullscreen();

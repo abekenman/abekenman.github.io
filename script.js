@@ -20,13 +20,13 @@ function alo() {
 }   
 function ale() {
   setTimeout(() => {
-    cleset = window.setInterval(() => {
+    cleset = setInterval(() => {
       try {
         if(nff == true) {
           audio.play();
           alo();
         } else {
-          window.onfocus = () => {
+          onfocus = () => {
             nff = true;
           }
         }
@@ -41,16 +41,12 @@ window.onload = () => {
   ip = document.getElementById('fill');
   audi = document.getElementById('audio');
   ip.onchange = (e) => {
-    try {
-      const blobURL = URL.createObjectURL(e.target.files[0]);
-      document.getElementById('star').innerHTML = '';
-      audi.src = blobURL;
-      audio = new Audio(document.querySelector('audio').src);
-      eType = e.target.files[0].type;
-      video = document.querySelector('video');
-    } catch (ie) {
-      alert(ie);
-    }
+    const blobURL = URL.createObjectURL(e.target.files[0]);
+    document.getElementById('star').innerHTML = '';
+    audi.src = blobURL;
+    audio = new Audio(document.querySelector('audio').src);
+    eType = e.target.files[0].type;
+    video = document.querySelector('video');
     document.onclick = () => {
     }
     document.body.onclick = () => {

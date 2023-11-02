@@ -1,5 +1,6 @@
-var canvas, hx, hy, hw, hh, hlarge, hlayer, hilong, hstart, hpb, hfn, hsta, x, y, large, hfps, hlong, layer, ilong, start, hinsert, hpb, s;
+var canvas, hx, hy, hw, hh, hlarge, hlayer, hilong, hstart, hpb, hfn, hsta, x, y, large, hfps, hlong, layer, ilong, start, hinsert, hpb, s, ww;
 onload = () => {
+  ww = new Worker('ww.js');
   x = y = large = layer = ilong = start = [];
   canvas = document.querySelector('canvas');
   hx = document.querySelector('#x');
@@ -31,14 +32,16 @@ onload = () => {
     hpb.value = hfn.value;
   }
   hsta.onclick = () => {
-    s = setInterval(() => {
-      if(hpb.value == hpb.max) {
-        dese();
-      } else {
-        hpb.value = Number(hpb.value) + 1;
-        hfn.value = Number(hfn.value) + 1;
+    ww.postMessage({
+      title: 'start',
+      value: {
+        first: true, data: {
+          hpb: hpb.value,
+          fps: hfps.value,
+          max: hpb.max
+        }
       }
-    }, 1000 / hfps.value);
+    });
   }
   hw.value = 900;
   hh.value = 1600;

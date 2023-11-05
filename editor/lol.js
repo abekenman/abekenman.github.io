@@ -35,11 +35,9 @@ onload = () => {
     ww.postMessage({
       title: 'start',
       value: {
-        first: true, data: {
-          hpb: hpb.value,
-          fps: hfps.value,
-          max: hpb.max
-        }
+        hpb: hpb.value,
+        fps: hfps.value,
+        max: hpb.max
       }
     });
   }

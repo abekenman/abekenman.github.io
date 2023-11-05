@@ -42,7 +42,7 @@ onload = () => {
     });
   }
   ww.onmessage = m => {
-    if(m =='start') {
+    if(m.data.title =='start') {
       hpb.value = hfn.value = m.data.value;
     }
   }

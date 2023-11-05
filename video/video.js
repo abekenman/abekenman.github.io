@@ -18,7 +18,6 @@ onload = () => {
     video.start();
     document.onclick = () => {
       video.stop();
-      vin.pause();
       video.ondataavailable = (n) => {
         var blo = new Blob([n.data]);
         document.querySelector('a').href = URL.createObjectURL(blo);

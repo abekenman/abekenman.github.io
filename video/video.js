@@ -22,7 +22,7 @@ onload = () => {
       video.ondataavailable = (n) => {
         var blo = new Blob([n.data]);
         document.querySelector('a').href = URL.createObjectURL(blo);
-        document.querySelector('a').download = 'video' + n.data.type;
+        document.querySelector('a').download = 'video.mp4';
       };
     };
   };

@@ -41,6 +41,14 @@ onload = () => {
       }
     });
   }
+  ww.onmessage = m => {
+    if(m =='start') {
+      hpb.value = hfn.value = m.data.value;
+    }
+  }
+  ww.onerror = e => {
+    alert(e.message);
+  }
   hw.value = 900;
   hh.value = 1600;
   hfps.value = 40;

@@ -8,7 +8,8 @@ onload = () => {
   draw.fillRect(0, 0, 1000, 1000);
   const cap = document.querySelector("canvas").captureStream();
   try {
-    video = new MediaRecorder(cap, { type: 'video/mp4'});
+    video = new MediaRecorder(cap, { mimeType: 'video/mp4'});
+    vin.srcObject = cap;
   } catch (e) {
     alert(e);
   }
@@ -17,6 +18,7 @@ onload = () => {
     vin.play();
     document.onclick = () => {
       video.stop();
+      vin.pause();
       video.ondataavailable = (n) => {
         var blo = new Blob([n.data], { type: 'video/mp4' });
         document.querySelector('a').href = URL.createObjectURL(blo);

@@ -1,14 +1,14 @@
-var start = { interval: '', fps: 0, number: 0, long: 0, time: 0};
+var start = { interval: '', fps: 0, hpb: 0, max: 0, time: 0};
 onmessage = m => {
   if(m.data.title == 'start') {
     start.fps = m.data.value.fps;
-    start.number = m.data.value.number;
-    start.long = m.data.value.long;
+    start.hpb = m.data.value.hpb;
+    start.max = m.data.value.max;
     start.time = 0;
     start.interval = setInterval(() => {
       start.time++;
-      postMessage({ title: 'start', value: start.number + start.time });
-      if(start.number + start.time == start.long) clearInterval(start.interval)
-    }, start.fps);
+      postMessage({ title: 'start', value: start.hpb + start.time });
+      if(start.hpb + start.time == start.max) clearInterval(start.interval)
+    }, 1000 / start.fps);
   }
 }

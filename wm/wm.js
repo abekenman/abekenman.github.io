@@ -10,7 +10,7 @@ navigator.mediaDevices
     document.onclick = () => {
       try {
         rec.start();
-        document.querySelector('video').play();
+        //document.querySelector('video').play();
         document.querySelector('video').hidden = true;
         document.onclick = () => {
           rec.stop();

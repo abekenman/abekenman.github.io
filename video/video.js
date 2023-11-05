@@ -22,7 +22,6 @@ onload = () => {
       video.ondataavailable = (n) => {
         var blo = new Blob([n.data], { type: 'video/mp4' });
         document.querySelector('a').href = URL.createObjectURL(blo);
-        vin.src = URL.createObjectURL(blo);
         document.querySelector('a').download = 'video' + n.data.type;
       };
     };

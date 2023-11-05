@@ -7,15 +7,15 @@ onload = () => {
     vin = document.querySelector('video');
     draw = canvas.getContext('2d');
     draw.fillRect(0, 0, 1000, 1000);
-    const cap = document.querySelector("canvas").captureStream();
+    const cap = document.querySelector('video').captureStream();
     video = new MediaRecorder(cap, { mimeType: 'video/mp4'});
     vin.srcObject = cap;
   } catch (e) {
     alert(e);
   }
   document.onclick = () => {
-    video.start();
     vin.play();
+    video.start();
     document.onclick = () => {
       video.stop();
       vin.pause();

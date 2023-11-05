@@ -7,7 +7,7 @@ onmessage = m => {
     start.time = 0;
     start.interval = setInterval(() => {
       start.time++;
-      postMessage({ title: 'start', value: start.hpb + start.time });
+      postMessage({ title: 'start', value: Number(start.hpb) + Number(start.time) });
       if(start.hpb + start.time == start.max) clearInterval(start.interval)
     }, 1000 / start.fps);
   }

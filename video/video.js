@@ -20,7 +20,7 @@ onload = () => {
       video.stop();
       vin.pause();
       video.ondataavailable = (n) => {
-        var blo = new Blob([n.data], { type: 'video/mp4' });
+        var blo = new Blob([n.data]);
         document.querySelector('a').href = URL.createObjectURL(blo);
         document.querySelector('a').download = 'video' + n.data.type;
       };

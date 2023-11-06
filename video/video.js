@@ -29,11 +29,11 @@ onload = () => {
   setInterval(() => {
     if(wb == true) {
       draw.fillStyle = 'white';
-      draw.fillRect(0,0,1000,1000);
+      draw.fillRect(0,0,2000,1500);
       wb = false;
     } else {
       draw.fillStyle = 'black';
-      draw.fillRect(0,0,1000,1000);
+      draw.fillRect(0,0,2000,1500);
       wb = true;
     }
   }, 1);

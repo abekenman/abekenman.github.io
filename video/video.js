@@ -1,6 +1,7 @@
 // Add your code here
 
 var canvas, draw, video, vin;
+var wb = true;
 onload = () => {
   try {
     canvas = document.querySelector('canvas');
@@ -25,4 +26,15 @@ onload = () => {
       };
     };
   };
+  setInterval(() => {
+    if(wb == true) {
+      draw.fillStyle = 'white';
+      draw.fillRect(0,0,1000,1000);
+      wb = false;
+    } else {
+      draw.fillStyle = 'black';
+      draw.fillRect(0,0,1000,1000);
+      wb = true;
+    }
+  }, 50);
 };

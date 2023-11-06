@@ -8,7 +8,7 @@ onload = () => {
     vin = document.querySelector('video');
     draw = canvas.getContext('2d');
     draw.fillRect(0, 0, 1000, 1000);
-    const cap = document.querySelector('canvas').captureStream();
+    const cap = document.querySelector('canvas').captureStream(120);
     video = new MediaRecorder(cap, { mimeType: "video/mp4"});
     vin.srcObject = cap;
   } catch (e) {

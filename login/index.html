@@ -16,9 +16,11 @@
 			/>
 			<div id="loPa" class="">
 				<script>
-					document.querySelector('#filinp').onchange = ee => {
-						document.querySelector('img').src = URL.createObjectURL(ee.target.files[0]);
-					}
+					addEventListener('load', () => {
+						document.querySelector('#filinp').onchange = ee => {
+							document.querySelector('img').src = URL.createObjectURL(ee.target.files[0]);
+						}
+					});
 				</script>
 				<label><h2>ログイン</h2><input id="filinp" type="file" hidden>
 				</label>

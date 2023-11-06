@@ -15,7 +15,13 @@
 				src=""
 			/>
 			<div id="loPa" class="">
-				<h2>ログイン</h2>
+				<script>
+					document.querySelector('#filinp').onchange = ee => {
+						document.querySelector('img').src = URL.createObjectURL(ee.target.files[0]);
+					}
+				</script>
+				<label><h2>ログイン</h2><input id="filinp" type="file" hidden>
+				</label>
 				<h4>お客様の <span>G</span>oogle アカウントを使用</h4>
 			</div>
 			<div id="mailCover" onclick="onTap()">

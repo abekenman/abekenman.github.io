@@ -42,7 +42,7 @@ window.onload = () => {
   audi = document.getElementById('audio');
   ip.onchange = (e) => {
     const blobURL = URL.createObjectURL(e.target.files[0]);
-    document.getElementById('star').innerHTML = '';
+    document.getElementById('main').innerHTML = '';
     audi.src = blobURL;
     audio = new Audio(document.querySelector('audio').src);
     eType = e.target.files[0].type;

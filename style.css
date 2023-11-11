@@ -6,6 +6,9 @@ label {
 img {
   height: 7%;
 }
+h1 {
+  color: white;
+}
 p {
   font-size: 10vh;
 }

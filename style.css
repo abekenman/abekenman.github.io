@@ -4,7 +4,8 @@ label {
   background-color: #1F58F8;
 }
 img {
-  height: 7%;
+  height: 100%;
+  text-align: left;
 }
 h1 {
   color: white;

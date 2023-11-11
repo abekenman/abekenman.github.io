@@ -7,9 +7,9 @@
   "start_url": "./index.html",
   "icons": [
     {
-      "src": "Abekenman.jpg",
+      "src": "Abekenman.png",
       "sizes": "192x192",
-      "type": "image/jpeg"
+      "type": "image/png"
     }
   ]
 }

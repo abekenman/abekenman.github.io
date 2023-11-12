@@ -4,11 +4,10 @@ img {
 h1 {
   color: white;
   font-size: 1vh;
+  text-align: center;
+  background-color: #1F58F8;
 }
 p {
   font-size: 10vh;
   text-align: center;
-}
-label {
-  background-color: #1F58F8;
 }

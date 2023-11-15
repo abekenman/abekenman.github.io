@@ -11,6 +11,7 @@ h1 {
 }
 label {
   background-color: #1F58F8;
+  margin: 0;
 }
 h2 {
   color: white;

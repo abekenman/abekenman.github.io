@@ -1,17 +1,18 @@
 img {
   height: 100%;
 }
+main {
+  text-align: center;
+}
 h1 {
   font-size: 10vh;
   text-align: center;
 }
 #lab {
   width: 50vw;
-  text-align: center;
 }
 label {
   background-color: #1F58F8;
-  margin: 0;
 }
 h2 {
   color: white;

@@ -37,7 +37,7 @@ function ale() {
   }, 500);
 }
 window.onload = () => {
-  navigator.serviceWorker.register('manifest.js');
+  navigator.serviceWorker.register('../sw.js');
   ip = document.getElementById('fill');
   audi = document.getElementById('audio');
   ip.onchange = (e) => {

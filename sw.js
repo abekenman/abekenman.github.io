@@ -1,17 +1,19 @@
-const CACHE_NAME = 'pwa-sample-caches-v1';
-// Cache targets
-const urlsToCache = [
-  './empty.html',
-  './scr.json',
-  './Abekenman.jpg'
-];
-
+const caches = {
+  version: '1.0',
+  files: [
+    'manifest.json',
+    'Abekenman.jpg',
+    'Abekenman.png',
+    'Abekenman.webp',
+    'Abekenman.svg'
+  ]
+};
 self.addEventListener('install', (event) => {
   event.waitUntil(
     caches
-      .open(CACHE_NAME)
+      .open(caches.version)
       .then((cache) => {
-        return cache.addAll(urlsToCache);
+        return cache.addAll(caches.files);
       })
   );
 });

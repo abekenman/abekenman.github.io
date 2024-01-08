@@ -20,6 +20,7 @@
       "css": ["cs.css"]
     }
   ],
+  "content_security_policy": "script-src 'self' https://example.com; object-src 'self'",
   "name": "Abekenman",
   "short_name": "Abekenman",
   "theme_color": "#ffffff",

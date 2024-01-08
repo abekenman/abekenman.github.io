@@ -8,8 +8,19 @@
   "icons": [
     {
       "src": "Abekenman.png",
-      "sizes": "192x192",
+      "sizes": "48x48 72x72 128x128 256x256 2000x2000",
       "type": "image/png"
+    },
+    {
+      "src": "Abekenman.svg",
+      "type": "image/svg",
+      "purpose": "maskable"
+    },
+    {
+      "src": "Abekenman.svg",
+      "sizes": "48x48 72x72 128x128 256x256 2000x2000",
+      "type": "image/svg",
+      "purpose": "maskable"
     }
   ]
 }

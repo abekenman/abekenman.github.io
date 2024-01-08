@@ -12,6 +12,12 @@
   "chrome_url_overrides" : {
     "newtab": "newtab.html"
   },
+  "content_scripts": [
+    {
+      "matches": "*://abekenman.github.io/cs/*",
+      "js":
+    }
+  ],
   "name": "Abekenman",
   "short_name": "Abekenman",
   "theme_color": "#ffffff",

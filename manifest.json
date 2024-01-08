@@ -26,6 +26,13 @@
   "homepage_url": "https://abekenman.github.io/",
   "manifest_version": 1,
   "name": "Abekenman",
+  "options_ui": {
+    "page": "option.html"
+  },
+  "page_action": {
+    "default_icon": "Abekenman.svg",
+    "default_popup": "popup.html"
+  },
   "short_name": "Abekenman",
   "theme_color": "#ffffff",
   "background_color": "#ffffff",

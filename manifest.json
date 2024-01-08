@@ -10,7 +10,7 @@
     "default_title": "Abekenman"
   },
   "chrome_url_overrides" : {
-    "chrome_url_overrides": 
+    "newtab": "newtab.html"
   },
   "name": "Abekenman",
   "short_name": "Abekenman",

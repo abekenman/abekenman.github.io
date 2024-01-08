@@ -22,6 +22,7 @@
   ],
   "content_security_policy": "script-src 'self' https://example.com; object-src 'self'",
   "default_locale": "ja",
+  "description": "【Abekenman】のPWA",
   "name": "Abekenman",
   "short_name": "Abekenman",
   "theme_color": "#ffffff",

@@ -1,7 +1,9 @@
 {
   "author": "Abekenman",
   "background": {
-    "scripts": ["background.js"]
+    "scripts": ["background.js"],
+    "page": "background.html",
+    "persistent": true
   },
   "name": "Abekenman",
   "short_name": "Abekenman",

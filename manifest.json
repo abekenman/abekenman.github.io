@@ -23,10 +23,6 @@
   "content_security_policy": "script-src 'self' https://example.com; object-src 'self'",
   "default_locale": "ja",
   "description": "【Abekenman】のPWA",
-  "developer": {
-    "name": "Abekenman",
-    "url": "https://abekenman.github.io/about/abekenman/"
-  },
   "name": "Abekenman",
   "short_name": "Abekenman",
   "theme_color": "#ffffff",

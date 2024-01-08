@@ -5,6 +5,10 @@
     "page": "background.html",
     "persistent": true
   },
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_title": "Abekenman"
+  },
   "name": "Abekenman",
   "short_name": "Abekenman",
   "theme_color": "#ffffff",

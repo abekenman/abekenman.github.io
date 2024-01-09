@@ -35,7 +35,7 @@
     "default_icon": "Abekenman.svg",
     "default_popup": "popup.html"
   },
-  "short_name": "Abekenman",
+  "short_name": "Abekenman"
   "theme_color": "#ffffff",
   "background_color": "#ffffff",
   "display": "standalone",
@@ -57,5 +57,7 @@
       "type": "image/svg",
       "purpose": "maskable"
     }
-  ]
+  ],
+  "version": "1.0",
+  "version_name": "1.0"
 }

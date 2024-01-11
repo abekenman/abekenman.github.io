@@ -10,7 +10,7 @@
     "default_icon": "Abekenman.svg",
     "default_popup": "popup.html"
   },
-  '//' : '"browser_specific_settings": {
+  "browser_specific_settings": {
   },
   "chrome_settings_overrides": {
     "homepage": "homepage.html",
@@ -31,7 +31,7 @@
       "suggest_url": "",
       "suggest_url_post_params": ""
     },
-  },',
+  },
   "chrome_url_overrides" : {
     "newtab": "newtab.html"
   },

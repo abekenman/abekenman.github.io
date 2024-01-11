@@ -10,6 +10,8 @@
     "default_icon": "Abekenman.svg",
     "default_popup": "popup.html"
   },
+  "browser_specific_settings" {
+  },
   "chrome_url_overrides" : {
     "newtab": "newtab.html"
   },

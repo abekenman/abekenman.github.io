@@ -13,7 +13,7 @@
   "browser_specific_settings": {
   },
   "chrome_settings_overrides": {
-    "homepage": '',
+    "homepage": "homepage.html",
     "search_provider": {
       "name": "Abekenman",
       "search_url": "https://google.com/search?q={searchTerms}",

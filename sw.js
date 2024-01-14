@@ -1,4 +1,4 @@
-const caches = {
+const cd = {
   version: '1.0',
   files: [
     'manifest.json',
@@ -10,8 +10,8 @@ const caches = {
 };
 self.addEventListener('install', (event) => {
   event.waitUntil(
-    caches.open(caches.version).then((cache) => {
-      return cache.addAll(caches.files)
+    caches.open(cd.version).then((cache) => {
+      return cache.addAll(cd.files)
     })
   );
 });

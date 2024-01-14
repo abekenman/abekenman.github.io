@@ -15,7 +15,7 @@
   },
   "content_scripts": [
     {
-      "matches": ["*://example.com/*"],
+      "matches": ["https://abekenman.github.io/*"],
       "js": ["cs.js"],
       "run_at": "document_start",
       "css": ["cs.css"]

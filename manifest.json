@@ -10,28 +10,6 @@
     "default_icon": "Abekenman.svg",
     "default_popup": "popup.html"
   },
-  "browser_specific_settings": {
-  },
-  "chrome_settings_overrides": {
-    "homepage": "homepage.html",
-    "search_provider": {
-      "name": "Abekenman",
-      "search_url": "https://google.com/search?q={searchTerms}",
-      "is_default": true,
-      "alternate_urls": "https://www.google.com/search?p={searchTerms}",
-      "encoding": "UTF-8",
-      "favicon_url": "https://abekenman.github.io/Abekenman.svg",
-      "image_url": "https://lens.google.com/search?p={searchTerms}",
-      "image_url_post_params": "",
-      "instant_url": "",
-      "instant_url_post_params": "",
-      "keyword": "",
-      "prepopulated_id": "",
-      "search_url_post_params": "",
-      "suggest_url": "",
-      "suggest_url_post_params": ""
-    },
-  },
   "chrome_url_overrides" : {
     "newtab": "newtab.html"
   },
@@ -43,7 +21,6 @@
       "css": ["cs.css"]
     }
   ],
-  "content_security_policy": "script-src 'self' https://example.com; object-src 'self'",
   "default_locale": "ja",
   "description": "【Abekenman】のPWA",
   "homepage_url": "https://abekenman.github.io/",

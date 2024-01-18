@@ -1,3 +1,5 @@
 browser.runtime.onMessage = () => {
-  browser.tabs.create();
+  browser.tabs.create({
+    windowId: 2
+  });
 }

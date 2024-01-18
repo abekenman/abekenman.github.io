@@ -5,6 +5,7 @@
     "page": "background.html",
     "persistent": true
   },
+  "background_color": "#ffffff",
   "browser_action": {
     "default_title": "Abekenman",
     "default_icon": "Abekenman.svg",
@@ -23,6 +24,7 @@
   ],
   "default_locale": "ja",
   "description": "【Abekenman】のPWA",
+  "display": "standalone",
   "homepage_url": "https://abekenman.github.io/",
   "manifest_version": 1,
   "name": "Abekenman",
@@ -36,8 +38,6 @@
   },
   "short_name": "Abekenman"
   "theme_color": "#ffffff",
-  "background_color": "#ffffff",
-  "display": "standalone",
   "start_url": "./index.html",
   "icons": [
     {

@@ -26,19 +26,6 @@
   "description": "【Abekenman】のPWA",
   "display": "standalone",
   "homepage_url": "https://abekenman.github.io/",
-  "manifest_version": 1,
-  "name": "Abekenman",
-  "options_ui": {
-    "page": "option.html"
-  },
-  "page_action": {
-    "default_title": "Abekenman",
-    "default_icon": "Abekenman.svg",
-    "default_popup": "popup.html"
-  },
-  "short_name": "Abekenman",
-  "start_url": "./index.html",
-  "theme_color": "#ffffff",
   "icons": [
     {
       "src": "Abekenman.png",
@@ -57,6 +44,19 @@
       "purpose": "maskable"
     }
   ],
+  "manifest_version": 1,
+  "name": "Abekenman",
+  "options_ui": {
+    "page": "option.html"
+  },
+  "page_action": {
+    "default_title": "Abekenman",
+    "default_icon": "Abekenman.svg",
+    "default_popup": "popup.html"
+  },
+  "short_name": "Abekenman",
+  "start_url": "./index.html",
+  "theme_color": "#ffffff",
   "version": "1.0",
   "version_name": "1.0"
 }

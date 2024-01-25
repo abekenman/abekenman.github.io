@@ -2,7 +2,6 @@ const cd = {
   version: '1.0',
   files: [
     'manifest.json',
-    'Abekenman.jpg',
     'Abekenman.png',
     'Abekenman.webp',
     'Abekenman.svg'
